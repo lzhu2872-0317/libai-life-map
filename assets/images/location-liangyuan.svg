@@ -1,0 +1,12 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img" aria-label="商丘">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#225f70"/><stop offset="1" stop-color="#b88746"/></linearGradient>
+    <pattern id="p" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M0 18h36M18 0v36" stroke="rgba(255,255,255,.14)" stroke-width="1"/></pattern>
+  </defs>
+  <rect width="640" height="320" fill="url(#g)"/>
+  <rect width="640" height="320" fill="url(#p)"/>
+  <circle cx="520" cy="72" r="72" fill="rgba(255,255,255,.18)"/>
+  <path d="M0 246c76-34 128-22 188-42 80-27 128-83 220-54 78 25 126 1 232-38v208H0z" fill="rgba(255,255,255,.18)"/>
+  <text x="42" y="146" fill="white" font-size="64" font-family="KaiTi, serif" letter-spacing="8">商丘</text>
+  <text x="46" y="196" fill="rgba(255,255,255,.84)" font-size="28" font-family="Microsoft YaHei, sans-serif">梁宋交游</text>
+</svg>

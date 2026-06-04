@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "title": "李白诗词地理样本",
+    "note": "用于地图联动的精选样本，非全集。"
+  },
+  "poems": [
+    {
+      "id": "p-emei",
+      "title": "峨眉山月歌",
+      "year": 725,
+      "locationId": "emei",
+      "genre": "七言绝句",
+      "excerpt": "峨眉山月半轮秋，影入平羌江水流。",
+      "theme": ["山水", "离蜀", "行旅"],
+      "summary": "以峨眉月色开启离蜀东下的空间叙事。"
+    },
+    {
+      "id": "p-guangling",
+      "title": "黄鹤楼送孟浩然之广陵",
+      "year": 728,
+      "locationId": "yangzhou",
+      "genre": "七言绝句",
+      "excerpt": "孤帆远影碧空尽，唯见长江天际流。",
+      "theme": ["送别", "长江", "交游"],
+      "summary": "诗题目的地广陵指向扬州，体现江汉至江淮的诗性交通。"
+    },
+    {
+      "id": "p-jingyesi",
+      "title": "静夜思",
+      "year": 726,
+      "locationId": "jiangyou",
+      "genre": "五言绝句",
+      "excerpt": "举头望明月，低头思故乡。",
+      "theme": ["月", "乡愁"],
+      "summary": "作为故乡意象样本，联动青莲成长地。"
+    },
+    {
+      "id": "p-chuyue",
+      "title": "初月",
+      "year": 715,
+      "locationId": "jiangyou",
+      "genre": "五言律诗",
+      "excerpt": "玉蟾离海上，白露湿花时。",
+      "theme": ["少年", "月", "蜀中"],
+      "summary": "用于复刻截图中早年作品卡片的本地样本。"
+    },
+    {
+      "id": "p-yuhou",
+      "title": "雨后望月",
+      "year": 715,
+      "locationId": "jiangyou",
+      "genre": "五言诗",
+      "excerpt": "四郊阴霭散，开户半蟾生。",
+      "theme": ["月", "山水"],
+      "summary": "早年蜀地月夜题材样本。"
+    },
+    {
+      "id": "p-fangdaoshi",
+      "title": "访戴天山道士不遇",
+      "year": 719,
+      "locationId": "jiangyou",
+      "genre": "五言律诗",
+      "excerpt": "犬吠水声中，桃花带露浓。",
+      "theme": ["访道", "山水", "游仙"],
+      "summary": "对应李白早年访道不遇事件。"
+    },
+    {
+      "id": "p-jiangjinjiu",
+      "title": "将进酒",
+      "year": 744,
+      "locationId": "changan",
+      "genre": "乐府",
+      "excerpt": "天生我材必有用，千金散尽还复来。",
+      "theme": ["豪放", "宴饮", "失意"],
+      "summary": "用于表现长安前后理想与失意交织的精神气质。"
+    },
+    {
+      "id": "p-fenghuangtai",
+      "title": "登金陵凤凰台",
+      "year": 748,
+      "locationId": "jinling",
+      "genre": "七言律诗",
+      "excerpt": "凤凰台上凤凰游，凤去台空江自流。",
+      "theme": ["怀古", "登临", "金陵"],
+      "summary": "金陵怀古书写的代表作。"
+    },
+    {
+      "id": "p-xietiao",
+      "title": "宣州谢朓楼饯别校书叔云",
+      "year": 753,
+      "locationId": "xuancheng",
+      "genre": "杂言古诗",
+      "excerpt": "俱怀逸兴壮思飞，欲上青天揽明月。",
+      "theme": ["送别", "登楼", "怀才"],
+      "summary": "宣州谢朓楼场景带出晚期情绪与江南登临。"
+    },
+    {
+      "id": "p-lushan",
+      "title": "望庐山瀑布",
+      "year": 756,
+      "locationId": "lushan",
+      "genre": "七言绝句",
+      "excerpt": "飞流直下三千尺，疑是银河落九天。",
+      "theme": ["山水", "奇观"],
+      "summary": "庐山诗歌地理的高识别度样本。"
+    },
+    {
+      "id": "p-baidi",
+      "title": "早发白帝城",
+      "year": 759,
+      "locationId": "jiangling",
+      "genre": "七言绝句",
+      "excerpt": "两岸猿声啼不住，轻舟已过万重山。",
+      "theme": ["遇赦", "长江", "速度"],
+      "summary": "遇赦东还的路线诗，联动江陵与长江水路。"
+    }
+  ],
+  "themes": [
+    { "name": "山水", "count": 3 },
+    { "name": "送别", "count": 3 },
+    { "name": "行旅", "count": 3 },
+    { "name": "怀古", "count": 1 },
+    { "name": "豪放", "count": 1 }
+  ]
+}

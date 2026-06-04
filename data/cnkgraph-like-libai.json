@@ -1,0 +1,190 @@
+{
+  "Common": null,
+  "Title": "李白",
+  "Traces": [
+    {
+      "Title": "李白 <span class='inlineComment2'>(701-762)</span>",
+      "RequestUri": "scope=&author=李白&beginYear=0&endYear=0",
+      "CenterLatitude": 34.2,
+      "CenterLongitude": 104.8,
+      "ZoomLevel": 4,
+      "Detail": "<div class='traceIntro'><b>李白</b>，字太白，号青莲居士。此文件为目标站字段结构的本地自建样本，用于学习复刻页面结构与交互。</div>",
+      "Lines": [
+        {
+          "Title": "蜀中至长江路线",
+          "Markers": [
+            { "Title": "江油（昌明）", "Latitude": 31.762818, "Longitude": 104.731092 },
+            { "Title": "平武（江油）", "Latitude": 32.414862, "Longitude": 104.535462 },
+            { "Title": "剑阁", "Latitude": 32.294266, "Longitude": 105.531838 },
+            { "Title": "三台（梓州）", "Latitude": 31.101709, "Longitude": 105.087305 },
+            { "Title": "成都", "Latitude": 30.657, "Longitude": 104.066 },
+            { "Title": "峨眉山", "Latitude": 29.52, "Longitude": 103.33 },
+            { "Title": "渝州", "Latitude": 29.563, "Longitude": 106.551 },
+            { "Title": "江陵", "Latitude": 30.335, "Longitude": 112.24 }
+          ]
+        },
+        {
+          "Title": "江南中原路线",
+          "Markers": [
+            { "Title": "洞庭", "Latitude": 29.37, "Longitude": 113.12 },
+            { "Title": "金陵", "Latitude": 32.06, "Longitude": 118.797 },
+            { "Title": "广陵", "Latitude": 32.394, "Longitude": 119.412 },
+            { "Title": "洛阳", "Latitude": 34.619, "Longitude": 112.454 },
+            { "Title": "长安", "Latitude": 34.341, "Longitude": 108.939 },
+            { "Title": "梁园", "Latitude": 34.414, "Longitude": 115.656 },
+            { "Title": "东鲁", "Latitude": 35.414, "Longitude": 116.587 }
+          ]
+        },
+        {
+          "Title": "晚年流放与江东路线",
+          "Markers": [
+            { "Title": "宣州", "Latitude": 30.945, "Longitude": 118.758 },
+            { "Title": "庐山", "Latitude": 29.57, "Longitude": 115.98 },
+            { "Title": "浔阳", "Latitude": 29.705, "Longitude": 116.002 },
+            { "Title": "夜郎方向", "Latitude": 28.13, "Longitude": 106.82 },
+            { "Title": "江陵", "Latitude": 30.335, "Longitude": 112.24 },
+            { "Title": "当涂", "Latitude": 31.57, "Longitude": 118.497 }
+          ]
+        }
+      ],
+      "Markers": [
+        {
+          "Id": "jiangyou",
+          "Latitude": 31.762818,
+          "Longitude": 104.731092,
+          "Title": "江油（昌明）",
+          "Summary": "701-718年，蜀中成长地。",
+          "Detail": "李白少年时期主要生活在蜀中江油一带。此处为本地自建摘要。",
+          "Activities": [
+            { "Year": 701, "Month": null, "Day": null, "OldYear": "长安元年", "Title": "出生与迁居", "Activity": "出生或幼年迁居蜀中，随父居。", "Subject": "", "People": "", "Place": { "Place": "江油（昌明）", "Province": "四川", "City": "绵阳" } },
+            { "Year": 710, "Month": null, "Day": null, "OldYear": "景云元年", "Title": "攻读诗书", "Activity": "攻读经典与诸子百家。", "Subject": "", "People": "", "Place": { "Place": "江油（昌明）", "Province": "四川", "City": "绵阳" } },
+            { "Year": 715, "Month": null, "Day": null, "OldYear": "开元三年", "Title": "少年有诗", "Activity": "始学干谒、好剑术，已有诗作。", "Subject": "初月；雨后望月；对雨", "People": "", "Place": { "Place": "江油（昌明）", "Province": "四川", "City": "绵阳" } },
+            { "Year": 719, "Month": null, "Day": null, "OldYear": "开元七年", "Title": "访道不遇", "Activity": "访戴天山道士，不遇，有诗。", "Subject": "访戴天山道士不遇", "People": "道士", "Place": { "Place": "江油（昌明）", "Province": "四川", "City": "绵阳" } }
+          ],
+          "Poems": [
+            { "Title": "初月", "Year": 715, "ArticleType": 2, "Summary": "少年蜀中月夜题材样本。" },
+            { "Title": "雨后望月", "Year": 715, "ArticleType": 2, "Summary": "雨后望月，承接蜀中山水经验。" },
+            { "Title": "访戴天山道士不遇", "Year": 719, "ArticleType": 2, "Summary": "访道不遇，呈现早年游仙意趣。" }
+          ]
+        },
+        {
+          "Id": "pingwu",
+          "Latitude": 32.414862,
+          "Longitude": 104.535462,
+          "Title": "平武（江油）",
+          "Summary": "718年，往来旁郡。",
+          "Detail": "平武作为早年蜀中行旅节点，用于呈现李白十八岁前后的活动范围。",
+          "Activities": [
+            { "Year": 718, "Title": "往来旁郡", "Activity": "往来旁郡，游江油一带。", "Subject": "", "People": "友人", "Place": { "Place": "平武（江油）", "Province": "四川", "City": "绵阳" } }
+          ],
+          "Poems": []
+        },
+        {
+          "Id": "jiange",
+          "Latitude": 32.294266,
+          "Longitude": 105.531838,
+          "Title": "剑阁",
+          "Summary": "718年，蜀道行旅。",
+          "Detail": "剑阁为蜀道要地，本地样本用作李白早年行旅范围节点。",
+          "Activities": [
+            { "Year": 718, "Title": "剑阁行旅", "Activity": "游江油、剑阁等地。", "Subject": "", "People": "", "Place": { "Place": "剑阁", "Province": "四川", "City": "广元" } }
+          ],
+          "Poems": []
+        },
+        {
+          "Id": "zitong",
+          "Latitude": 31.101709,
+          "Longitude": 105.087305,
+          "Title": "三台（梓州）",
+          "Summary": "718年，从学纵横。",
+          "Detail": "梓州节点用于承接李白早年学习纵横术的叙述。",
+          "Activities": [
+            { "Year": 718, "Title": "从学纵横", "Activity": "游梓州，从赵蕤学纵横术。", "Subject": "", "People": "赵蕤", "Place": { "Place": "三台（梓州）", "Province": "四川", "City": "绵阳" } }
+          ],
+          "Poems": []
+        },
+        {
+          "Id": "chengdu",
+          "Latitude": 30.657,
+          "Longitude": 104.066,
+          "Title": "成都",
+          "Summary": "720年，游成都。",
+          "Detail": "成都为蜀地文化中心，本地样本以其承接离蜀前活动。",
+          "Activities": [
+            { "Year": 720, "Title": "游成都", "Activity": "春，游成都，有诗。", "Subject": "", "People": "", "Place": { "Place": "成都", "Province": "四川", "City": "成都" } }
+          ],
+          "Poems": []
+        },
+        {
+          "Id": "emei",
+          "Latitude": 29.52,
+          "Longitude": 103.33,
+          "Title": "峨眉山",
+          "Summary": "725年，离蜀东下。",
+          "Detail": "《峨眉山月歌》连接蜀中山水与长江行旅。",
+          "Activities": [
+            { "Year": 725, "Title": "辞亲远游", "Activity": "仗剑去国，沿江东下。", "Subject": "峨眉山月歌", "People": "", "Place": { "Place": "峨眉山", "Province": "四川", "City": "乐山" } }
+          ],
+          "Poems": [
+            { "Title": "峨眉山月歌", "Year": 725, "ArticleType": 2, "Summary": "离蜀东下的山水行旅诗。" }
+          ]
+        },
+        {
+          "Id": "changan",
+          "Latitude": 34.341,
+          "Longitude": 108.939,
+          "Title": "长安",
+          "Summary": "742-744年，供奉翰林。",
+          "Detail": "长安阶段是李白声名与政治受挫并存的核心节点。",
+          "Activities": [
+            { "Year": 742, "Title": "奉诏入京", "Activity": "入长安，供奉翰林。", "Subject": "", "People": "唐玄宗；贺知章", "Place": { "Place": "长安", "Province": "陕西", "City": "西安" } },
+            { "Year": 744, "Title": "赐金放还", "Activity": "离开长安，转入梁宋江湖。", "Subject": "", "People": "", "Place": { "Place": "长安", "Province": "陕西", "City": "西安" } }
+          ],
+          "Poems": [
+            { "Title": "将进酒", "Year": 744, "ArticleType": 2, "Summary": "表现豪放与失意交织的精神气质。" }
+          ]
+        },
+        {
+          "Id": "jinling",
+          "Latitude": 32.06,
+          "Longitude": 118.797,
+          "Title": "金陵",
+          "Summary": "江南行旅与怀古。",
+          "Detail": "金陵是李白江南书写的重要城市。",
+          "Activities": [
+            { "Year": 748, "Title": "金陵再游", "Activity": "登临怀古，送别交游。", "Subject": "登金陵凤凰台", "People": "", "Place": { "Place": "金陵", "Province": "江苏", "City": "南京" } }
+          ],
+          "Poems": [
+            { "Title": "登金陵凤凰台", "Year": 748, "ArticleType": 2, "Summary": "金陵怀古代表作。" }
+          ]
+        },
+        {
+          "Id": "xuancheng",
+          "Latitude": 30.945,
+          "Longitude": 118.758,
+          "Title": "宣州",
+          "Summary": "753年，谢朓楼登临。",
+          "Detail": "宣州节点呈现李白晚期江南登临与送别。",
+          "Activities": [
+            { "Year": 753, "Title": "宣州登临", "Activity": "登谢朓楼，饯别校书叔云。", "Subject": "宣州谢朓楼饯别校书叔云", "People": "李云", "Place": { "Place": "宣州", "Province": "安徽", "City": "宣城" } }
+          ],
+          "Poems": [
+            { "Title": "宣州谢朓楼饯别校书叔云", "Year": 753, "ArticleType": 2, "Summary": "晚期登楼送别名篇。" }
+          ]
+        },
+        {
+          "Id": "dangtu",
+          "Latitude": 31.57,
+          "Longitude": 118.497,
+          "Title": "当涂",
+          "Summary": "762年，晚年终点。",
+          "Detail": "李白晚年依李阳冰，卒于当涂。",
+          "Activities": [
+            { "Year": 762, "Title": "卒于当涂", "Activity": "晚年依族叔李阳冰，卒于当涂。", "Subject": "", "People": "李阳冰", "Place": { "Place": "当涂", "Province": "安徽", "City": "马鞍山" } }
+          ],
+          "Poems": []
+        }
+      ]
+    }
+  ]
+}

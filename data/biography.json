@@ -1,0 +1,86 @@
+{
+  "profile": {
+    "name": "李白",
+    "courtesyName": "太白",
+    "alias": "青莲居士",
+    "dynasty": "唐",
+    "years": "701-762",
+    "summary": "李白是盛唐最具代表性的诗人之一，其行迹横跨蜀中、荆楚、江南、中原、长安、东鲁与晚年流放路线。本项目以地图、时间线、诗词卡片和地点详情联动呈现其一生核心轨迹。",
+    "keywords": ["盛唐", "行旅", "山水", "游仙", "送别", "怀古"],
+    "stats": {
+      "locations": 18,
+      "timelineEvents": 20,
+      "poemSamples": 8,
+      "routeDistanceLabel": "约一万余里"
+    }
+  },
+  "relationships": [
+    {
+      "name": "杜甫",
+      "relation": "诗友",
+      "locationId": "liangyuan",
+      "summary": "天宝三载前后，李白与杜甫、高适在梁宋一带交游。"
+    },
+    {
+      "name": "高适",
+      "relation": "诗友",
+      "locationId": "liangyuan",
+      "summary": "梁宋交游网络中的重要人物。"
+    },
+    {
+      "name": "孟浩然",
+      "relation": "前辈诗友",
+      "locationId": "yangzhou",
+      "summary": "《黄鹤楼送孟浩然之广陵》以送别表达敬慕与惜别。"
+    },
+    {
+      "name": "贺知章",
+      "relation": "赏识者",
+      "locationId": "changan",
+      "summary": "传称贺知章赞李白为“谪仙人”，强化其长安声名。"
+    },
+    {
+      "name": "李阳冰",
+      "relation": "族叔",
+      "locationId": "dangtu",
+      "summary": "李白晚年依李阳冰，后者为其整理文集。"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "c1",
+      "title": "蜀中少年",
+      "years": "701-725",
+      "locationIds": ["suiye", "jiangyou", "chengdu", "emei"],
+      "summary": "从出生传说到青莲成长地，蜀中阶段塑造李白的山水经验、任侠气质和远游志向。"
+    },
+    {
+      "id": "c2",
+      "title": "仗剑远游",
+      "years": "725-742",
+      "locationIds": ["yuzhou", "jiangling", "dongting", "jinling", "yangzhou", "luoyang", "donglu"],
+      "summary": "离蜀后沿长江东下，进入荆楚江南与中原网络，诗歌地理迅速扩展。"
+    },
+    {
+      "id": "c3",
+      "title": "长安高峰",
+      "years": "742-744",
+      "locationIds": ["changan"],
+      "summary": "奉诏入长安供奉翰林，名动京师，也在政治现实中受挫。"
+    },
+    {
+      "id": "c4",
+      "title": "江湖再游",
+      "years": "744-756",
+      "locationIds": ["liangyuan", "donglu", "jinling", "xuancheng", "lushan"],
+      "summary": "离京后重回漫游与交游，梁宋、东鲁、江南构成密集活动区域。"
+    },
+    {
+      "id": "c5",
+      "title": "流放与晚年",
+      "years": "757-762",
+      "locationIds": ["xunyang", "ye_lang", "jiangling", "dangtu"],
+      "summary": "永王事件后被系狱并判流夜郎，途中遇赦，晚年归于江东。"
+    }
+  ]
+}

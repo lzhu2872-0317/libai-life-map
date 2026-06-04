@@ -1,0 +1,268 @@
+{
+  "meta": {
+    "title": "李白生平时间线",
+    "range": [701, 762]
+  },
+  "events": [
+    {
+      "id": "e701",
+      "year": 701,
+      "month": null,
+      "title": "李白出生",
+      "locationId": "suiye",
+      "type": "birth",
+      "summary": "据传统说法，李白出生于西域碎叶一带。",
+      "detail": "此处作为行迹起点处理；具体出生地在学术上仍有不同说法。"
+    },
+    {
+      "id": "e705",
+      "year": 705,
+      "month": null,
+      "title": "迁居蜀中",
+      "locationId": "jiangyou",
+      "type": "home",
+      "summary": "幼年随家迁居绵州昌隆青莲乡。",
+      "detail": "蜀中阶段构成李白早期文化记忆与山水经验。"
+    },
+    {
+      "id": "e706",
+      "year": 706,
+      "month": null,
+      "title": "随父居蜀",
+      "locationId": "jiangyou",
+      "type": "home",
+      "summary": "随父居。",
+      "detail": "706-709年，随父居于蜀中江油一带。"
+    },
+    {
+      "id": "e710",
+      "year": 710,
+      "month": null,
+      "title": "攻读诗书",
+      "locationId": "jiangyou",
+      "type": "study",
+      "summary": "攻读《诗》《书》及诸子百家。",
+      "detail": "710年，少年李白攻读经典与诸子，为后来的诗文气象奠定基础。"
+    },
+    {
+      "id": "e715",
+      "year": 715,
+      "month": null,
+      "title": "少年读书与任侠",
+      "locationId": "jiangyou",
+      "type": "study",
+      "summary": "传其少年广泛阅读、习剑，形成豪迈自我形象。",
+      "detail": "页面用该节点承接青莲成长地、早年志向与蜀中活动。"
+    },
+    {
+      "id": "e718-pingwu",
+      "year": 718,
+      "month": null,
+      "title": "往来旁郡",
+      "locationId": "pingwu",
+      "type": "travel",
+      "summary": "往来旁郡，游江油，有诗赠友人。",
+      "detail": "718年，李白十八岁，往来旁郡，游江油、平武一带。"
+    },
+    {
+      "id": "e718-jiange",
+      "year": 718,
+      "month": null,
+      "title": "剑阁行旅",
+      "locationId": "jiange",
+      "type": "travel",
+      "summary": "往来旁郡，游江油、剑阁等地。",
+      "detail": "剑阁为蜀道要地，此节点用于呈现李白早年蜀地行旅。"
+    },
+    {
+      "id": "e718-zitong",
+      "year": 718,
+      "month": null,
+      "title": "三台梓州",
+      "locationId": "zitong",
+      "type": "travel",
+      "summary": "游梓州，从赵蕤学纵横术。",
+      "detail": "718年前后，李白游梓州，并与纵横之学传统发生联系。"
+    },
+    {
+      "id": "e719",
+      "year": 719,
+      "month": null,
+      "title": "访戴天山道士",
+      "locationId": "jiangyou",
+      "type": "poem",
+      "summary": "访戴天山道士，不遇，有诗。",
+      "detail": "719年，访道不遇，形成早期游仙与山水经验。"
+    },
+    {
+      "id": "e720",
+      "year": 720,
+      "month": null,
+      "title": "蜀中交游",
+      "locationId": "chengdu",
+      "type": "travel",
+      "summary": "活动范围扩展至成都等地。",
+      "detail": "成都作为蜀地文化中心，用于呈现离蜀前的本地漫游。"
+    },
+    {
+      "id": "e724",
+      "year": 724,
+      "month": null,
+      "title": "离蜀准备",
+      "locationId": "jiangyou",
+      "type": "travel",
+      "summary": "李白逐渐转向更大范围的出游与求仕。",
+      "detail": "该节点与后续峨眉、渝州、江陵水路相连。"
+    },
+    {
+      "id": "e725",
+      "year": 725,
+      "month": null,
+      "title": "仗剑去国，辞亲远游",
+      "locationId": "emei",
+      "type": "route",
+      "summary": "离开蜀地，沿长江东下。",
+      "detail": "《峨眉山月歌》常作为此段行旅的文学坐标。"
+    },
+    {
+      "id": "e727",
+      "year": 727,
+      "month": null,
+      "title": "漫游荆楚江南",
+      "locationId": "dongting",
+      "type": "travel",
+      "summary": "进入楚地与江南，行旅地点显著增多。",
+      "detail": "该阶段页面联动洞庭、金陵、扬州等诗歌地点。"
+    },
+    {
+      "id": "e728",
+      "year": 728,
+      "month": null,
+      "title": "广陵送别",
+      "locationId": "yangzhou",
+      "type": "poem",
+      "summary": "扬州、广陵成为送别诗的重要地理意象。",
+      "detail": "用《黄鹤楼送孟浩然之广陵》承接江汉与江淮路线。"
+    },
+    {
+      "id": "e734",
+      "year": 734,
+      "month": null,
+      "title": "中原求仕",
+      "locationId": "luoyang",
+      "type": "court",
+      "summary": "李白在洛阳、长安一线展开政治文化交游。",
+      "detail": "洛阳在页面中承担中原网络节点。"
+    },
+    {
+      "id": "e736",
+      "year": 736,
+      "month": null,
+      "title": "东鲁居留",
+      "locationId": "donglu",
+      "type": "home",
+      "summary": "东鲁成为李白中年重要居留地。",
+      "detail": "此节点用于连接山东区域、家庭生活与中原往还。"
+    },
+    {
+      "id": "e742",
+      "year": 742,
+      "month": null,
+      "title": "奉诏入长安",
+      "locationId": "changan",
+      "type": "court",
+      "summary": "李白入长安供奉翰林，迎来声名高峰。",
+      "detail": "长安是整套交互系统的高亮核心节点之一。"
+    },
+    {
+      "id": "e744",
+      "year": 744,
+      "month": null,
+      "title": "赐金放还",
+      "locationId": "changan",
+      "type": "turning",
+      "summary": "离开长安，政治理想受挫。",
+      "detail": "页面路线从长安转向梁宋、东鲁和江南。"
+    },
+    {
+      "id": "e744-dufu",
+      "year": 744,
+      "month": null,
+      "title": "梁宋遇杜甫、高适",
+      "locationId": "liangyuan",
+      "type": "friend",
+      "summary": "李白、杜甫、高适在梁宋一带交游。",
+      "detail": "该节点用于人物关系与地点卡片联动。"
+    },
+    {
+      "id": "e748",
+      "year": 748,
+      "month": null,
+      "title": "金陵再游",
+      "locationId": "jinling",
+      "type": "poem",
+      "summary": "金陵怀古、登临、送别书写集中。",
+      "detail": "联动《登金陵凤凰台》与金陵地点详情。"
+    },
+    {
+      "id": "e753",
+      "year": 753,
+      "month": null,
+      "title": "宣州登临",
+      "locationId": "xuancheng",
+      "type": "poem",
+      "summary": "宣城、谢朓楼等地成为晚期诗歌高频场景。",
+      "detail": "该节点驱动右侧诗词卡片和地图缩放。"
+    },
+    {
+      "id": "e756",
+      "year": 756,
+      "month": null,
+      "title": "安史乱中入幕",
+      "locationId": "lushan",
+      "type": "turning",
+      "summary": "乱世中的政治选择改变李白晚年命运。",
+      "detail": "页面用庐山和浔阳串联永王事件后果。"
+    },
+    {
+      "id": "e757",
+      "year": 757,
+      "month": null,
+      "title": "浔阳系狱",
+      "locationId": "xunyang",
+      "type": "exile",
+      "summary": "受永王事件牵连，被系浔阳狱。",
+      "detail": "浔阳节点切换为警示色，并触发流放路线段。"
+    },
+    {
+      "id": "e758",
+      "year": 758,
+      "month": null,
+      "title": "长流夜郎",
+      "locationId": "ye_lang",
+      "type": "exile",
+      "summary": "李白被判长流夜郎，沿江向西南行进。",
+      "detail": "该路线在地图上以虚线与低饱和色表现。"
+    },
+    {
+      "id": "e759",
+      "year": 759,
+      "month": null,
+      "title": "途中遇赦",
+      "locationId": "jiangling",
+      "type": "turning",
+      "summary": "至白帝城附近遇赦，东还江陵。",
+      "detail": "联动《早发白帝城》，路线动画从西南折返长江。"
+    },
+    {
+      "id": "e762",
+      "year": 762,
+      "month": null,
+      "title": "卒于当涂",
+      "locationId": "dangtu",
+      "type": "late",
+      "summary": "晚年依李阳冰，卒于当涂。",
+      "detail": "时间线终点，地图聚焦江东。"
+    }
+  ]
+}

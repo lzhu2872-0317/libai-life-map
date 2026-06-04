@@ -1,0 +1,5164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0" xml:lang="zh-Hans">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Stage 3: Chang'an, 742-744 TEI Corpus</title>
+        <respStmt>
+          <resp>TEI encoding generated from the four-period Li Bai text analysis</resp>
+          <name>OpenAI Codex</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p>Local capstone research corpus for TEI, Voyant Tools, and map-based analysis.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Subset of Li Bai poems assigned to Stage 3: Chang'an, 742-744; corresponding KML file: Stage3_Changan_742_744.kml.</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>The corpus contains only works whose Author field is 李白 and whose Poem_Content is non-empty. Texts are deduplicated by title, year, and full poem content. Each poem is assigned to one of four project stages corresponding to the KML map files.</p>
+      </projectDesc>
+      <classDecl>
+        <taxonomy xml:id="periods">
+          <bibl>Four project stages aligned with the KML map files.</bibl>
+        <category xml:id="stage1-youth">
+          <catDesc>Stage 1: Youth, 701-724 / 第一时期：蜀中少年期; 701-724; map layer: Stage1_Youth_701_724.kml</catDesc>
+        </category>
+        <category xml:id="stage2-travels">
+          <catDesc>Stage 2: Travels, 725-741 / 第二时期：出蜀与漫游期; 725-741; map layer: Stage2_Travels_725_741.kml</catDesc>
+        </category>
+        <category xml:id="stage3-changan">
+          <catDesc>Stage 3: Chang'an, 742-744 / 第三时期：长安时期; 742-744; map layer: Stage3_Changan_742_744.kml</catDesc>
+        </category>
+        <category xml:id="stage4-exile-late">
+          <catDesc>Stage 4: Exile and Late Travels, 745-762 / 第四时期：放还、乱离与晚年期; 745-762; map layer: Stage4_Exile_745_762.kml</catDesc>
+        </category>
+        </taxonomy>
+        <taxonomy xml:id="themes">
+          <bibl>Theme clusters used in the four-period text analysis.</bibl>
+        <category xml:id="theme-nature">
+          <catDesc>山水自然</catDesc>
+        </category>
+        <category xml:id="theme-travel">
+          <catDesc>行旅空间</catDesc>
+        </category>
+        <category xml:id="theme-farewell">
+          <catDesc>离别酬赠</catDesc>
+        </category>
+        <category xml:id="theme-banquet">
+          <catDesc>酒宴歌舞</catDesc>
+        </category>
+        <category xml:id="theme-political">
+          <catDesc>仕宦功名</catDesc>
+        </category>
+        <category xml:id="theme-daoist">
+          <catDesc>仙道超越</catDesc>
+        </category>
+        <category xml:id="theme-war">
+          <catDesc>边塞战争</catDesc>
+        </category>
+        <category xml:id="theme-sorrow">
+          <catDesc>愁苦漂泊</catDesc>
+        </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="zh-Hans">Chinese, simplified script</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-05-30">Generated four-period TEI corpus for Li Bai capstone text analysis.</change>
+    </revisionDesc>
+  </teiHeader>
+  <TEI xml:id="libai-stage3-changan-0001" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>赠薛校书</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">43</note>
+          <note type="characterCount">40</note>
+          <note type="lineCount">4</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>赠薛校书</title>
+            <date when="744">744年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="744">744年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0001-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-sorrow">愁苦漂泊</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>赠薛校书</head>
+          <lg type="poem">
+          <l n="1">我有吴越曲，无人知此音。</l>
+          <l n="2">姑苏成蔓草，麋鹿空悲吟。</l>
+          <l n="3">未夸观涛作，空郁钓鼇心。</l>
+          <l n="4">举手谢东海，虚行归故林。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="5.000">山水自然: 2</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="5.000">行旅空间: 2</measure>
+          <measure type="themeDensity" ana="#theme-sorrow" unit="per100chars" quantity="2.500">愁苦漂泊: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0002" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>温泉侍从归逢故人</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">41</note>
+          <note type="characterCount">40</note>
+          <note type="lineCount">4</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>温泉侍从归逢故人</title>
+            <date when="742">742年10月</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="742">742年10月</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0002-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-farewell">离别酬赠</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-war">边塞战争</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>温泉侍从归逢故人</head>
+          <lg type="poem">
+          <l n="1">汉帝长杨苑，夸胡羽猎归。</l>
+          <l n="2">子云叨侍从，献赋有光辉。</l>
+          <l n="3">激赏摇天笔，承恩赐御衣。</l>
+          <l n="4">逢君奏明主，他日共飜飞。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="7.500">仕宦功名: 3</measure>
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="5.000">山水自然: 2</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="2.500">行旅空间: 1</measure>
+          <measure type="themeDensity" ana="#theme-farewell" unit="per100chars" quantity="2.500">离别酬赠: 1</measure>
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="2.500">边塞战争: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0005" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>侍从游宿温泉宫作</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">41</note>
+          <note type="characterCount">40</note>
+          <note type="lineCount">4</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>侍从游宿温泉宫作</title>
+            <date when="742">742年10月</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="742">742年10月</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0005-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-war">边塞战争</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>侍从游宿温泉宫作</head>
+          <lg type="poem">
+          <l n="1">羽林十二将，罗列应星文。</l>
+          <l n="2">霜仗悬秋月，霓旌卷夜云。</l>
+          <l n="3">严更千户肃，清乐九天闻。</l>
+          <l n="4">日出瞻佳气，葱葱绕圣君。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="10.000">山水自然: 4</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="2.500">仕宦功名: 1</measure>
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="2.500">边塞战争: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0006" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>赠郭将军</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">56</note>
+          <note type="lineCount">4</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>赠郭将军</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0006-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-farewell">离别酬赠</term>
+            <term ana="#theme-banquet">酒宴歌舞</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-war">边塞战争</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>赠郭将军</head>
+          <lg type="poem">
+          <l n="1">将军少年出武威，入掌银台护紫微。</l>
+          <l n="2">平明拂劒朝天去，薄暮垂鞭醉酒归。</l>
+          <l n="3">爱子临风吹玉笛，美人向月舞罗衣。</l>
+          <l n="4">畴昔雄豪如梦里，相逢且欲醉春晖。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-banquet" unit="per100chars" quantity="8.929">酒宴歌舞: 5</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="7.143">仕宦功名: 4</measure>
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="5.357">山水自然: 3</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="3.571">行旅空间: 2</measure>
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="3.571">边塞战争: 2</measure>
+          <measure type="themeDensity" ana="#theme-farewell" unit="per100chars" quantity="1.786">离别酬赠: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0007" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>送贺监归四明应制</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">43</note>
+          <note type="characterCount">56</note>
+          <note type="lineCount">4</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>送贺监归四明应制</title>
+            <date when="744">744年春</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="744">744年春</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0007-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>送贺监归四明应制</head>
+          <lg type="poem">
+          <l n="1">久辞荣禄遂初衣，曾向长生说息机。</l>
+          <l n="2">真诀自从茅氏得，恩波宁阻洞庭归。</l>
+          <l n="3">瑶台含雾星辰满，仙峤浮空岛屿微。</l>
+          <l n="4">借问欲栖珠树鹤，何年却向帝城飞。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="7.143">仙道超越: 4</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="1.786">行旅空间: 1</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="1.786">仕宦功名: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0008" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>杜陵绝句</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">20</note>
+          <note type="lineCount">2</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>杜陵绝句</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0008-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>杜陵绝句</head>
+          <lg type="poem">
+          <l n="1">南登杜陵上，北望五陵间。</l>
+          <l n="2">秋水明落日，流光灭远山。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="20.000">山水自然: 4</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="10.000">行旅空间: 2</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0009" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>送贺宾客归越</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">43</note>
+          <note type="characterCount">28</note>
+          <note type="lineCount">2</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>送贺宾客归越</title>
+            <date when="744">744年春</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="744">744年春</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0009-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>送贺宾客归越</head>
+          <lg type="poem">
+          <l n="1">镜湖流水漾清波，狂客归舟逸兴多。</l>
+          <l n="2">山阴道士如相见，应写黄庭换白鹅。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="10.714">山水自然: 3</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="10.714">行旅空间: 3</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="3.571">仕宦功名: 1</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="3.571">仙道超越: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0010" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>春怨</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">28</note>
+          <note type="lineCount">2</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>春怨</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0010-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-war">边塞战争</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>春怨</head>
+          <lg type="poem">
+          <l n="1">白马金羁辽海东，罗帷绣被卧春风。</l>
+          <l n="2">落月低轩窥烛尽，飞花入户笑床空。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="17.857">山水自然: 5</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="3.571">行旅空间: 1</measure>
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="3.571">边塞战争: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0011" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>夕霁杜陵登楼寄韦繇</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">80</note>
+          <note type="lineCount">8</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>夕霁杜陵登楼寄韦繇</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0011-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-farewell">离别酬赠</term>
+            <term ana="#theme-war">边塞战争</term>
+            <term ana="#theme-sorrow">愁苦漂泊</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>夕霁杜陵登楼寄韦繇</head>
+          <lg type="poem">
+          <l n="1">浮阳灭霁景，万物生秋容。</l>
+          <l n="2">登楼送远目，伏槛观群峰。</l>
+          <l n="3">原野旷超缅，关河纷杂重。</l>
+          <l n="4">清晖映竹日，翠色明云松。</l>
+          <l n="5">蹈海寄遐想，还山迷旧踪。</l>
+          <l n="6">徒然迫晚暮，未果谐心胷。</l>
+          <l n="7">结桂空伫立，折麻恨莫从。</l>
+          <l n="8">思君达永夜，长乐闻疎钟。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="11.250">山水自然: 9</measure>
+          <measure type="themeDensity" ana="#theme-farewell" unit="per100chars" quantity="3.750">离别酬赠: 3</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="1.250">行旅空间: 1</measure>
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="1.250">边塞战争: 1</measure>
+          <measure type="themeDensity" ana="#theme-sorrow" unit="per100chars" quantity="1.250">愁苦漂泊: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0012" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>送窦司马贬宜春</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">60</note>
+          <note type="lineCount">6</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>送窦司马贬宜春</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0012-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-banquet">酒宴歌舞</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-war">边塞战争</term>
+            <term ana="#theme-sorrow">愁苦漂泊</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>送窦司马贬宜春</head>
+          <lg type="poem">
+          <l n="1">天马白银鞍，亲承明主欢。</l>
+          <l n="2">鬬鸡金宫里，射鴈碧云端。</l>
+          <l n="3">堂上罗中贵，歌钟清夜阑。</l>
+          <l n="4">何言谪南国，拂剑坐长叹。</l>
+          <l n="5">赵璧为谁点，隋珠枉被弹。</l>
+          <l n="6">圣朝多雨露，莫厌此行难。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="5.000">仕宦功名: 3</measure>
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="3.333">山水自然: 2</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="3.333">行旅空间: 2</measure>
+          <measure type="themeDensity" ana="#theme-banquet" unit="per100chars" quantity="3.333">酒宴歌舞: 2</measure>
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="3.333">边塞战争: 2</measure>
+          <measure type="themeDensity" ana="#theme-sorrow" unit="per100chars" quantity="1.667">愁苦漂泊: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0013" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>秋夜独坐怀故山</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">100</note>
+          <note type="lineCount">10</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>秋夜独坐怀故山</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0013-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-banquet">酒宴歌舞</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+            <term ana="#theme-war">边塞战争</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>秋夜独坐怀故山</head>
+          <lg type="poem">
+          <l n="1">小隐慕安石，远游学屈平。</l>
+          <l n="2">天书访江海，云卧起咸京。</l>
+          <l n="3">入侍瑶池宴，出陪玉辇行。</l>
+          <l n="4">夸胡新赋作，谏猎短书成。</l>
+          <l n="5">但奉紫霄顾，非邀青史名。</l>
+          <l n="6">庄周空说劒，墨翟耻论兵。</l>
+          <l n="7">拙薄遂疎绝，归闲事耦耕。</l>
+          <l n="8">顾无苍生望，空爱紫芝荣。</l>
+          <l n="9">寥落暝霞色，微茫旧壑情。</l>
+          <l n="10">秋山绿萝月，今夕为谁明。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="7.000">山水自然: 7</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="4.000">行旅空间: 4</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="2.000">仕宦功名: 2</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="2.000">仙道超越: 2</measure>
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="2.000">边塞战争: 2</measure>
+          <measure type="themeDensity" ana="#theme-banquet" unit="per100chars" quantity="1.000">酒宴歌舞: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0014" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>塞上曲</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">60</note>
+          <note type="lineCount">6</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>塞上曲</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0014-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-war">边塞战争</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>塞上曲</head>
+          <lg type="poem">
+          <l n="1">大汉无中策，匈奴犯渭桥。</l>
+          <l n="2">五原秋草绿，胡马一何骄。</l>
+          <l n="3">命将征西极，横行阴山侧。</l>
+          <l n="4">燕支落汉家，妇女无华色。</l>
+          <l n="5">转战渡黄河，休兵乐事多。</l>
+          <l n="6">萧条清万里，瀚海寂无波。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="8.333">山水自然: 5</measure>
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="8.333">边塞战争: 5</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="6.667">行旅空间: 4</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="1.667">仕宦功名: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0015" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>春思</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">30</note>
+          <note type="lineCount">3</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>春思</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0015-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-farewell">离别酬赠</term>
+            <term ana="#theme-political">仕宦功名</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>春思</head>
+          <lg type="poem">
+          <l n="1">燕草如碧丝，秦桑低绿枝。</l>
+          <l n="2">当君怀归日，是妾断肠时。</l>
+          <l n="3">春风不相识，何事入罗帏。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="13.333">山水自然: 4</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="3.333">行旅空间: 1</measure>
+          <measure type="themeDensity" ana="#theme-farewell" unit="per100chars" quantity="3.333">离别酬赠: 1</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="3.333">仕宦功名: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0016" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>侍从宜春苑奉诏赋龙池柳色初青听新莺百啭歌</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">119</note>
+          <note type="lineCount">8</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>侍从宜春苑奉诏赋龙池柳色初青听新莺百啭歌</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0016-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-banquet">酒宴歌舞</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+            <term ana="#theme-war">边塞战争</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>侍从宜春苑奉诏赋龙池柳色初青听新莺百啭歌</head>
+          <lg type="poem">
+          <l n="1">东风已绿瀛洲草，紫殿红楼觉春好，池南柳色半青青。</l>
+          <l n="2">萦烟袅娜拂绮城，垂丝百尺挂雕楹。</l>
+          <l n="3">上有好鸟相和鸣，间关早得春风情。</l>
+          <l n="4">春风卷入碧云去，千门万户皆春声。</l>
+          <l n="5">是时君王在镐京，五云垂晖耀紫清。</l>
+          <l n="6">仗出金宫随日转，天回玉辇绕花行。</l>
+          <l n="7">始向蓬莱看舞鹤，还过茝石听新莺。</l>
+          <l n="8">新莺飞绕上林苑，愿入箫韶杂凤笙。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="11.765">山水自然: 14</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="2.521">行旅空间: 3</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="2.521">仕宦功名: 3</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="2.521">仙道超越: 3</measure>
+          <measure type="themeDensity" ana="#theme-banquet" unit="per100chars" quantity="0.840">酒宴歌舞: 1</measure>
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="0.840">边塞战争: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0017" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>玉壶吟</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">108</note>
+          <note type="lineCount">8</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>玉壶吟</title>
+            <date when="743">743年秋</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年秋</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0017-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-banquet">酒宴歌舞</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+            <term ana="#theme-war">边塞战争</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>玉壶吟</head>
+          <lg type="poem">
+          <l n="1">烈士击玉壶，壮心惜暮年。</l>
+          <l n="2">三杯拂劒舞秋月，忽然高咏涕泗涟。</l>
+          <l n="3">凤凰初下紫泥诏，谒帝称觞登御筵。</l>
+          <l n="4">揄扬九重万乘主，谑浪赤墀青琐贤。</l>
+          <l n="5">朝天数换飞龙马，勅赐珊瑚白玉鞭。</l>
+          <l n="6">世人不识东方朔，大隐金门是谪仙。</l>
+          <l n="7">西施宜笑复宜嚬，丑女效之徒累身。</l>
+          <l n="8">君王虽爱蛾眉好，无奈宫中妬杀人。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="5.556">仕宦功名: 6</measure>
+          <measure type="themeDensity" ana="#theme-banquet" unit="per100chars" quantity="2.778">酒宴歌舞: 3</measure>
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="1.852">山水自然: 2</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="1.852">行旅空间: 2</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="0.926">仙道超越: 1</measure>
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="0.926">边塞战争: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0018" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>西岳云台歌送丹丘子</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">154</note>
+          <note type="lineCount">11</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>西岳云台歌送丹丘子</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0018-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-banquet">酒宴歌舞</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>西岳云台歌送丹丘子</head>
+          <lg type="poem">
+          <l n="1">西岳峥嵘何壮哉，黄河如丝天际来。</l>
+          <l n="2">黄河万里触山动，盘涡毂转秦地雷。</l>
+          <l n="3">荣光休气纷五彩，千年一清圣人在。</l>
+          <l n="4">巨灵咆哮擘两山，洪波喷箭射东海。</l>
+          <l n="5">三峰却立如欲摧，翠崖丹谷高掌开。</l>
+          <l n="6">白帝金精运元气，石作莲花云作台。</l>
+          <l n="7">云台阁道连窈冥，中有不死丹丘生。</l>
+          <l n="8">明星玉女备洒扫，麻姑搔背指爪轻。</l>
+          <l n="9">我皇手把天地户，丹丘谈天与天语。</l>
+          <l n="10">九重出入生光辉，东来蓬莱复西归。</l>
+          <l n="11">玉浆傥惠故人饮，骑二茅龙上天飞。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="5.844">山水自然: 9</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="3.247">仙道超越: 5</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="1.948">行旅空间: 3</measure>
+          <measure type="themeDensity" ana="#theme-banquet" unit="per100chars" quantity="0.649">酒宴歌舞: 1</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="0.649">仕宦功名: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0019" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>同族弟金城尉叔卿烛照山水壁画歌</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">102</note>
+          <note type="lineCount">7</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>同族弟金城尉叔卿烛照山水壁画歌</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0019-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-farewell">离别酬赠</term>
+            <term ana="#theme-banquet">酒宴歌舞</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+            <term ana="#theme-war">边塞战争</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>同族弟金城尉叔卿烛照山水壁画歌</head>
+          <lg type="poem">
+          <l n="1">高堂粉壁图蓬瀛，烛前一见沧洲清。</l>
+          <l n="2">洪波汹涌山峥嵘，皎若丹丘隔海望赤城。</l>
+          <l n="3">光中乍喜岚气灭，谓逢山阴晴后雪。</l>
+          <l n="4">回溪碧流寂无喧，又如秦人月下窥花源。</l>
+          <l n="5">了然不觉清心魂，祗将叠嶂鸣秋猨。</l>
+          <l n="6">与君对此欢未歇，放歌行吟达明发。</l>
+          <l n="7">却顾海客扬云帆，便欲因之向溟渤。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="9.804">山水自然: 10</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="3.922">行旅空间: 4</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="2.941">仙道超越: 3</measure>
+          <measure type="themeDensity" ana="#theme-banquet" unit="per100chars" quantity="1.961">酒宴歌舞: 2</measure>
+          <measure type="themeDensity" ana="#theme-farewell" unit="per100chars" quantity="0.980">离别酬赠: 1</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="0.980">仕宦功名: 1</measure>
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="0.980">边塞战争: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0022" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>驾去温泉后赠杨山人</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">41</note>
+          <note type="characterCount">112</note>
+          <note type="lineCount">8</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>驾去温泉后赠杨山人</title>
+            <date when="742">742年10月</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="742">742年10月</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0022-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+            <term ana="#theme-war">边塞战争</term>
+            <term ana="#theme-sorrow">愁苦漂泊</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>驾去温泉后赠杨山人</head>
+          <lg type="poem">
+          <l n="1">少年落魄楚汉间，风尘萧瑟多苦颜。</l>
+          <l n="2">自言管葛竟谁许，长吁莫错还闭关。</l>
+          <l n="3">一朝君王垂拂拭，剖心输丹雪胸臆。</l>
+          <l n="4">忽蒙白日回景光，直上青云生羽翼。</l>
+          <l n="5">幸陪鸾辇出鸿都，身骑飞龙天马驹。</l>
+          <l n="6">王公大人借颜色，金璋紫绶来相趋。</l>
+          <l n="7">当时结交何纷纷，片言道合惟有君。</l>
+          <l n="8">待吾尽节报明主，然后相携卧白云。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="6.250">仕宦功名: 7</measure>
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="4.464">山水自然: 5</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="1.786">行旅空间: 2</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="1.786">仙道超越: 2</measure>
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="1.786">边塞战争: 2</measure>
+          <measure type="themeDensity" ana="#theme-sorrow" unit="per100chars" quantity="0.893">愁苦漂泊: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0025" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>赠卢徵君昆弟</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">60</note>
+          <note type="lineCount">6</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>赠卢徵君昆弟</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0025-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>赠卢徵君昆弟</head>
+          <lg type="poem">
+          <l n="1">明主访贤逸，云泉今已空。</l>
+          <l n="2">二卢竟不起，万乘高其风。</l>
+          <l n="3">河上喜相得，壶中趣每同。</l>
+          <l n="4">沧州即此地，观化游无穷。</l>
+          <l n="5">水落海上清，鼇背覩方蓬。</l>
+          <l n="6">与君弄倒景，携手凌星虹。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="8.333">山水自然: 5</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="3.333">仕宦功名: 2</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="1.667">行旅空间: 1</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="1.667">仙道超越: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0028" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>望终南山寄紫阁隐者</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">49</note>
+          <note type="lineCount">5</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>望终南山寄紫阁隐者</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0028-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-political">仕宦功名</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>望终南山寄紫阁隐者</head>
+          <lg type="poem">
+          <l n="1">出门见南山，引领意无限。</l>
+          <l n="2">秀色难为名，苍翠日在眼。</l>
+          <l n="3">有时白云起，天际自舒卷。</l>
+          <l n="4">心中与之然，托兴每不浅。</l>
+          <l n="5">何当造幽人，灭迹栖绝??。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="6.122">山水自然: 3</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="2.041">仕宦功名: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0029" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>赠别王山人归布山</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">70</note>
+          <note type="lineCount">7</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>赠别王山人归布山</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0029-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-farewell">离别酬赠</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+            <term ana="#theme-sorrow">愁苦漂泊</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>赠别王山人归布山</head>
+          <lg type="poem">
+          <l n="1">王子析道论，微言破秋毫。</l>
+          <l n="2">还归布山隐，兴入天云高。</l>
+          <l n="3">尔去安可迟，瑶草恐衰歇。</l>
+          <l n="4">我心亦怀归，屡梦松上月。</l>
+          <l n="5">傲然遂独往，长啸开岩扉。</l>
+          <l n="6">林壑久已芜，石道生蔷薇。</l>
+          <l n="7">愿言弄笙鹤，岁晚来相依。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="8.571">山水自然: 6</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="5.714">行旅空间: 4</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="5.714">仙道超越: 4</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="2.857">仕宦功名: 2</measure>
+          <measure type="themeDensity" ana="#theme-farewell" unit="per100chars" quantity="1.429">离别酬赠: 1</measure>
+          <measure type="themeDensity" ana="#theme-sorrow" unit="per100chars" quantity="1.429">愁苦漂泊: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0030" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>灞陵行送别</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">43</note>
+          <note type="characterCount">68</note>
+          <note type="lineCount">5</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>灞陵行送别</title>
+            <date when="744">744年春</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="744">744年春</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0030-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-farewell">离别酬赠</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+            <term ana="#theme-sorrow">愁苦漂泊</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>灞陵行送别</head>
+          <lg type="poem">
+          <l n="1">送君灞陵亭，灞水流浩浩。</l>
+          <l n="2">上有无花之古树，下有伤心之春草。</l>
+          <l n="3">我向秦人问路岐，云是王粲南登之古道。</l>
+          <l n="4">古道连绵走西京，紫阙落日浮云生。</l>
+          <l n="5">正当今夕断肠处，黄鹂愁绝不忍听。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="10.294">山水自然: 7</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="2.941">行旅空间: 2</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="2.941">仕宦功名: 2</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="2.941">仙道超越: 2</measure>
+          <measure type="themeDensity" ana="#theme-farewell" unit="per100chars" quantity="1.471">离别酬赠: 1</measure>
+          <measure type="themeDensity" ana="#theme-sorrow" unit="per100chars" quantity="1.471">愁苦漂泊: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0031" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>送羽林陶将军</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">42</note>
+          <note type="lineCount">3</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>送羽林陶将军</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0031-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-farewell">离别酬赠</term>
+            <term ana="#theme-banquet">酒宴歌舞</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+            <term ana="#theme-war">边塞战争</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>送羽林陶将军</head>
+          <lg type="poem">
+          <l n="1">将军出使拥楼船，江上旌旗拂紫烟。</l>
+          <l n="2">万里横戈探虎穴，三杯拔剑舞龙泉。</l>
+          <l n="3">莫道词人无胆气，临行将赠绕朝鞭。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="14.286">边塞战争: 6</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="9.524">仕宦功名: 4</measure>
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="4.762">山水自然: 2</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="4.762">行旅空间: 2</measure>
+          <measure type="themeDensity" ana="#theme-banquet" unit="per100chars" quantity="4.762">酒宴歌舞: 2</measure>
+          <measure type="themeDensity" ana="#theme-farewell" unit="per100chars" quantity="2.381">离别酬赠: 1</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="2.381">仙道超越: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0032" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>送程刘二侍郎兼独孤判官赴安西幕府</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">70</note>
+          <note type="lineCount">5</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>送程刘二侍郎兼独孤判官赴安西幕府</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0032-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-farewell">离别酬赠</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+            <term ana="#theme-war">边塞战争</term>
+            <term ana="#theme-sorrow">愁苦漂泊</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>送程刘二侍郎兼独孤判官赴安西幕府</head>
+          <lg type="poem">
+          <l n="1">安西幕府多材雄，喧喧惟道三数公。</l>
+          <l n="2">绣衣貂裘明积雪，飞书走檄如飘风。</l>
+          <l n="3">朝辞明主出紫宫，银鞍送别金城空。</l>
+          <l n="4">天外飞霜下葱海，火旗云马生光彩。</l>
+          <l n="5">胡塞清尘几日归，汉家草绿遥相待。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="8.571">山水自然: 6</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="7.143">仕宦功名: 5</measure>
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="5.714">边塞战争: 4</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="2.857">行旅空间: 2</measure>
+          <measure type="themeDensity" ana="#theme-farewell" unit="per100chars" quantity="2.857">离别酬赠: 2</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="1.429">仙道超越: 1</measure>
+          <measure type="themeDensity" ana="#theme-sorrow" unit="per100chars" quantity="1.429">愁苦漂泊: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0033" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>送张遥之寿阳幕府</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">70</note>
+          <note type="lineCount">7</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>送张遥之寿阳幕府</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0033-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-war">边塞战争</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>送张遥之寿阳幕府</head>
+          <lg type="poem">
+          <l n="1">寿阳信天险，天险横荆关。</l>
+          <l n="2">苻坚百万众，遥阻八公山。</l>
+          <l n="3">不假筑长城，大贤在其间。</l>
+          <l n="4">战夫若熊虎，破敌有余闲。</l>
+          <l n="5">张子勇且英，少轻卫霍孱。</l>
+          <l n="6">投躯紫髯将，千里望风颜。</l>
+          <l n="7">勗尔効才略，功成衣锦还。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="4.286">仕宦功名: 3</measure>
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="4.286">边塞战争: 3</measure>
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="2.857">山水自然: 2</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="1.429">行旅空间: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0034" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>送于十八应四子举落第还嵩山</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">43</note>
+          <note type="characterCount">90</note>
+          <note type="lineCount">9</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>送于十八应四子举落第还嵩山</title>
+            <date when="744">744年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="744">744年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0034-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-banquet">酒宴歌舞</term>
+            <term ana="#theme-daoist">仙道超越</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>送于十八应四子举落第还嵩山</head>
+          <lg type="poem">
+          <l n="1">吾祖吹橐籥，天人信森罗。</l>
+          <l n="2">归根复太素，群动熙元和。</l>
+          <l n="3">炎炎四真人，摛辩若涛波。</l>
+          <l n="4">交流无时寂，杨墨日成科。</l>
+          <l n="5">夫子闻洛诵，夸才才固多。</l>
+          <l n="6">为金好踊跃，久客方蹉跎。</l>
+          <l n="7">道可束卖之，五宝溢山河。</l>
+          <l n="8">劝君还嵩丘，开酌盼庭柯。</l>
+          <l n="9">三花如未落，乘兴一来过。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="4.444">山水自然: 4</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="4.444">行旅空间: 4</measure>
+          <measure type="themeDensity" ana="#theme-banquet" unit="per100chars" quantity="1.111">酒宴歌舞: 1</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="1.111">仙道超越: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0035" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>送族弟绾从军安西</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">56</note>
+          <note type="lineCount">4</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>送族弟绾从军安西</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0035-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-war">边塞战争</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>送族弟绾从军安西</head>
+          <lg type="poem">
+          <l n="1">汉家兵马乘北风，鼓行而西破犬戎。</l>
+          <l n="2">尔随汉将出门去，剪虏若草收奇功。</l>
+          <l n="3">君王按剑望边色，旄头已落胡天空。</l>
+          <l n="4">匈奴系头数应尽，明年应入蒲萄宫。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="14.286">边塞战争: 8</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="7.143">行旅空间: 4</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="7.143">仕宦功名: 4</measure>
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="3.571">山水自然: 2</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0036" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>送祝八之江东赋得浣纱石</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">80</note>
+          <note type="lineCount">6</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>送祝八之江东赋得浣纱石</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0036-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-farewell">离别酬赠</term>
+            <term ana="#theme-political">仕宦功名</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>送祝八之江东赋得浣纱石</head>
+          <lg type="poem">
+          <l n="1">西施越溪女，明艳光云海。</l>
+          <l n="2">未入吴王宫殿时，浣纱古石今犹在。</l>
+          <l n="3">桃李新开映古查，菖蒲犹短出平沙。</l>
+          <l n="4">昔时红粉照流水，今日青苔覆落花。</l>
+          <l n="5">君去西秦适东越，碧山青江几超忽。</l>
+          <l n="6">若到天涯思故人，浣纱石上窥明月。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="11.250">山水自然: 9</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="2.500">仕宦功名: 2</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="1.250">行旅空间: 1</measure>
+          <measure type="themeDensity" ana="#theme-farewell" unit="per100chars" quantity="1.250">离别酬赠: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0038" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>以诗代书荅元丹丘</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">43</note>
+          <note type="characterCount">80</note>
+          <note type="lineCount">8</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>以诗代书荅元丹丘</title>
+            <date when="744">744年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="744">744年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0038-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-farewell">离别酬赠</term>
+            <term ana="#theme-political">仕宦功名</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>以诗代书荅元丹丘</head>
+          <lg type="poem">
+          <l n="1">青鸟海上来，今朝发何处。</l>
+          <l n="2">口衔云锦字，与我忽飞去。</l>
+          <l n="3">鸟去凌紫烟，书留绮窗前。</l>
+          <l n="4">开缄方一笑，乃是故人传。</l>
+          <l n="5">故人深相勗，忆我劳心曲。</l>
+          <l n="6">离居在咸阳，三见秦草绿。</l>
+          <l n="7">置书双袂间，引领不暂闲。</l>
+          <l n="8">长望杳难见，浮云横远山。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="10.000">山水自然: 8</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="5.000">行旅空间: 4</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="2.500">仕宦功名: 2</measure>
+          <measure type="themeDensity" ana="#theme-farewell" unit="per100chars" quantity="1.250">离别酬赠: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0039" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>金门荅苏秀才</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">210</note>
+          <note type="lineCount">21</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>金门荅苏秀才</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0039-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-farewell">离别酬赠</term>
+            <term ana="#theme-banquet">酒宴歌舞</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+            <term ana="#theme-sorrow">愁苦漂泊</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>金门荅苏秀才</head>
+          <lg type="poem">
+          <l n="1">君还石门日，朱火始改木。</l>
+          <l n="2">春草如有情，山中尚含绿。</l>
+          <l n="3">折芳愧遥忆，永路当自勗。</l>
+          <l n="4">远见故人心，平生以此足。</l>
+          <l n="5">巨海纳百川，麟阁多才贤。</l>
+          <l n="6">献书入金阙，酌醴奉琼筵。</l>
+          <l n="7">屡忝白云唱，恭闻黄竹篇。</l>
+          <l n="8">恩光照拙薄，云汉希腾迁。</l>
+          <l n="9">铭鼎倘云逐，扁丹方渺然。</l>
+          <l n="10">我留在金门，君去卧丹壑。</l>
+          <l n="11">未果三山期，遥欣一丘乐。</l>
+          <l n="12">玄珠寄象罔，赤水非寥廓。</l>
+          <l n="13">愿狎东海鸥，共营西山药。</l>
+          <l n="14">栖岩君寂灭，处世余龙蠖。</l>
+          <l n="15">良辰不同赏，永日应闲居。</l>
+          <l n="16">鸟吟檐间树，花落窗下书。</l>
+          <l n="17">缘溪见绿筿，隔岫窥红蕖。</l>
+          <l n="18">采薇行笑歌，眷我情何已。</l>
+          <l n="19">月出石镜间，松鸣风琴里。</l>
+          <l n="20">得心自虚妙，外物空颓靡。</l>
+          <l n="21">身世如两忘，从君老烟水。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="10.476">山水自然: 22</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="1.429">行旅空间: 3</measure>
+          <measure type="themeDensity" ana="#theme-banquet" unit="per100chars" quantity="1.429">酒宴歌舞: 3</measure>
+          <measure type="themeDensity" ana="#theme-farewell" unit="per100chars" quantity="0.952">离别酬赠: 2</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="0.952">仙道超越: 2</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="0.476">仕宦功名: 1</measure>
+          <measure type="themeDensity" ana="#theme-sorrow" unit="per100chars" quantity="0.476">愁苦漂泊: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0041" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>下终南山过斛斯山人宿置酒</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">70</note>
+          <note type="lineCount">7</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>下终南山过斛斯山人宿置酒</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0041-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-banquet">酒宴歌舞</term>
+            <term ana="#theme-political">仕宦功名</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>下终南山过斛斯山人宿置酒</head>
+          <lg type="poem">
+          <l n="1">暮从碧山下，山月随人归。</l>
+          <l n="2">却顾所来径，苍苍横翠微。</l>
+          <l n="3">相携及田家，童稚开荆扉。</l>
+          <l n="4">绿竹入幽径，青萝拂行衣。</l>
+          <l n="5">欢言得所憩，美酒聊共挥。</l>
+          <l n="6">长歌吟松风，曲尽河星稀。</l>
+          <l n="7">我醉君复乐，陶然共忘机。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="10.000">山水自然: 7</measure>
+          <measure type="themeDensity" ana="#theme-banquet" unit="per100chars" quantity="5.714">酒宴歌舞: 4</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="4.286">行旅空间: 3</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="1.429">仕宦功名: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0042" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>朝下过卢郎中叙旧游</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">60</note>
+          <note type="lineCount">6</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>朝下过卢郎中叙旧游</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0042-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-farewell">离别酬赠</term>
+            <term ana="#theme-banquet">酒宴歌舞</term>
+            <term ana="#theme-political">仕宦功名</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>朝下过卢郎中叙旧游</head>
+          <lg type="poem">
+          <l n="1">君登金华省，我入银台门。</l>
+          <l n="2">幸遇圣明主，俱承云雨恩。</l>
+          <l n="3">复此休浣时，闲为畴昔言。</l>
+          <l n="4">却话山海事，宛然林壑存。</l>
+          <l n="5">明湖思晓月，叠嶂忆清猿。</l>
+          <l n="6">何由返初服，田野醉芳樽。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="11.667">山水自然: 7</measure>
+          <measure type="themeDensity" ana="#theme-farewell" unit="per100chars" quantity="3.333">离别酬赠: 2</measure>
+          <measure type="themeDensity" ana="#theme-banquet" unit="per100chars" quantity="3.333">酒宴歌舞: 2</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="1.667">行旅空间: 1</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="1.667">仕宦功名: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0043" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>上元夫人</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">43</note>
+          <note type="characterCount">50</note>
+          <note type="lineCount">5</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>上元夫人</title>
+            <date when="744">744年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="744">744年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0043-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-sorrow">愁苦漂泊</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>上元夫人</head>
+          <lg type="poem">
+          <l n="1">上元谁夫人，偏得王母娇。</l>
+          <l n="2">嵯峨三角髻，余发散垂腰。</l>
+          <l n="3">裘披青毛锦，身着赤霜袍。</l>
+          <l n="4">手提嬴女儿，闲与凤吹箫。</l>
+          <l n="5">眉语两自笑，忽然随风飘。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="2.000">山水自然: 1</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="2.000">仕宦功名: 1</measure>
+          <measure type="themeDensity" ana="#theme-sorrow" unit="per100chars" quantity="2.000">愁苦漂泊: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0045" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>咏槿</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">40</note>
+          <note type="lineCount">4</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>咏槿</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0045-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-sorrow">愁苦漂泊</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>咏槿</head>
+          <lg type="poem">
+          <l n="1">园花笑芳年，池草艳春色。</l>
+          <l n="2">犹不如槿花，婵娟玉阶侧。</l>
+          <l n="3">芬荣何夭促，零落在瞬息。</l>
+          <l n="4">岂若琼树枝，终岁长翕赩。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="10.000">山水自然: 4</measure>
+          <measure type="themeDensity" ana="#theme-sorrow" unit="per100chars" quantity="2.500">愁苦漂泊: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0046" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>咏桂</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">50</note>
+          <note type="lineCount">5</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>咏桂</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0046-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-political">仕宦功名</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>咏桂</head>
+          <lg type="poem">
+          <l n="1">世人种桃李，皆在金张门。</l>
+          <l n="2">攀折争捷径，及此春风暄。</l>
+          <l n="3">一朝天霜下，荣耀难久存。</l>
+          <l n="4">安知南山桂，绿叶垂芳根。</l>
+          <l n="5">清阴亦可托，何惜树君园。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="6.000">山水自然: 3</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="2.000">仕宦功名: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0047" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>惧谗</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">50</note>
+          <note type="lineCount">5</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>惧谗</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0047-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-farewell">离别酬赠</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-war">边塞战争</term>
+            <term ana="#theme-sorrow">愁苦漂泊</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>惧谗</head>
+          <lg type="poem">
+          <l n="1">二桃杀三士，讵假劒如霜。</l>
+          <l n="2">众女妬蛾眉，双花竞春芳。</l>
+          <l n="3">魏姝信郑褏，掩袂对怀王。</l>
+          <l n="4">一惑巧言子，朱颜成死伤。</l>
+          <l n="5">行将泣团扇，戚戚愁人肠。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="4.000">山水自然: 2</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="4.000">仕宦功名: 2</measure>
+          <measure type="themeDensity" ana="#theme-sorrow" unit="per100chars" quantity="4.000">愁苦漂泊: 2</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="2.000">行旅空间: 1</measure>
+          <measure type="themeDensity" ana="#theme-farewell" unit="per100chars" quantity="2.000">离别酬赠: 1</measure>
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="2.000">边塞战争: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0049" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>杂曲歌辞 独不见</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">70</note>
+          <note type="lineCount">7</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>杂曲歌辞 独不见</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0049-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-farewell">离别酬赠</term>
+            <term ana="#theme-war">边塞战争</term>
+            <term ana="#theme-sorrow">愁苦漂泊</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>杂曲歌辞 独不见</head>
+          <lg type="poem">
+          <l n="1">白马谁家子，黄龙边塞儿。</l>
+          <l n="2">天山三丈雪，岂是远行时。</l>
+          <l n="3">春蕙忽秋草，莎鸡鸣曲池。</l>
+          <l n="4">风催寒椶响，月入霜闺悲。</l>
+          <l n="5">忆与君别年，种桃齐蛾眉。</l>
+          <l n="6">桃今百余尺，花落成枯枝。</l>
+          <l n="7">终然独不见，流泪空自知。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="11.429">山水自然: 8</measure>
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="4.286">边塞战争: 3</measure>
+          <measure type="themeDensity" ana="#theme-sorrow" unit="per100chars" quantity="4.286">愁苦漂泊: 3</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="2.857">行旅空间: 2</measure>
+          <measure type="themeDensity" ana="#theme-farewell" unit="per100chars" quantity="2.857">离别酬赠: 2</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0050" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>杂曲歌辞 君子有所思行</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">110</note>
+          <note type="lineCount">11</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>杂曲歌辞 君子有所思行</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0050-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-banquet">酒宴歌舞</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-war">边塞战争</term>
+            <term ana="#theme-sorrow">愁苦漂泊</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>杂曲歌辞 君子有所思行</head>
+          <lg type="poem">
+          <l n="1">紫阁连终南，青冥天倪色。</l>
+          <l n="2">凭崖望咸阳，宫阙罗北极。</l>
+          <l n="3">万井惊画出，九衢如弦直。</l>
+          <l n="4">渭水清银河，横天流不息。</l>
+          <l n="5">朝野盛文物，衣冠何翕赩。</l>
+          <l n="6">廐马散连山，军容威绝域。</l>
+          <l n="7">伊皐运元化，卫霍输筋力。</l>
+          <l n="8">歌钟乐未休，荣去老还逼。</l>
+          <l n="9">圆光过满缺，太阳移中昃。</l>
+          <l n="10">不散东海金，何争西辉匿。</l>
+          <l n="11">无作牛山悲，恻怆泪沾臆。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="4.545">山水自然: 5</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="3.636">行旅空间: 4</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="3.636">仕宦功名: 4</measure>
+          <measure type="themeDensity" ana="#theme-sorrow" unit="per100chars" quantity="2.727">愁苦漂泊: 3</measure>
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="1.818">边塞战争: 2</measure>
+          <measure type="themeDensity" ana="#theme-banquet" unit="per100chars" quantity="0.909">酒宴歌舞: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0053" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>相和歌辞 胡无人行</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">42</note>
+          <note type="characterCount">127</note>
+          <note type="lineCount">10</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>相和歌辞 胡无人行</title>
+            <date when="743">743年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="743">743年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0053-place-1">
+              <placeName>西安</placeName>
+              <location>
+                <geo>34.347436 108.946306</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-banquet">酒宴歌舞</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+            <term ana="#theme-war">边塞战争</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>相和歌辞 胡无人行</head>
+          <lg type="poem">
+          <l n="1">严风吹霜海草雕，筋干精坚胡马骄。</l>
+          <l n="2">汉家战士三十万，将军兼领霍嫖姚。</l>
+          <l n="3">流星白羽腰间插，劒花秋莲光出匣。</l>
+          <l n="4">天兵照雪下玉关，虏箭如沙射金甲。</l>
+          <l n="5">云龙风虎尽交回，太白入月敌可摧。</l>
+          <l n="6">敌可摧，旄头灭，履胡之肠涉胡血。</l>
+          <l n="7">悬胡青天上，埋胡紫[塞]旁。</l>
+          <l n="8">胡无人，汉道昌，陛下之寿三千霜。</l>
+          <l n="9">但歌大风云飞扬，安得猛士兮守四方。</l>
+          <l n="10">胡无人，汉道昌。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="11.811">边塞战争: 15</measure>
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="8.661">山水自然: 11</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="1.575">仕宦功名: 2</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="1.575">仙道超越: 2</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="0.787">行旅空间: 1</measure>
+          <measure type="themeDensity" ana="#theme-banquet" unit="per100chars" quantity="0.787">酒宴歌舞: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0231" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>奉饯高尊师如贵道士传道箓毕归北海</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">43</note>
+          <note type="characterCount">40</note>
+          <note type="lineCount">4</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>奉饯高尊师如贵道士传道箓毕归北海</title>
+            <date when="744">744年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="744">744年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0231-place-1">
+              <placeName>济南</placeName>
+              <location>
+                <geo>36.671627 117.001319</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-farewell">离别酬赠</term>
+            <term ana="#theme-banquet">酒宴歌舞</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>奉饯高尊师如贵道士传道箓毕归北海</head>
+          <lg type="poem">
+          <l n="1">道隐不可见，灵书藏洞天。</l>
+          <l n="2">吾师四万劫，历世遰相传。</l>
+          <l n="3">别杖留青竹，行歌蹑紫烟。</l>
+          <l n="4">离心无远近，长在玉京悬。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="5.000">山水自然: 2</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="5.000">仙道超越: 2</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="2.500">行旅空间: 1</measure>
+          <measure type="themeDensity" ana="#theme-farewell" unit="per100chars" quantity="2.500">离别酬赠: 1</measure>
+          <measure type="themeDensity" ana="#theme-banquet" unit="per100chars" quantity="2.500">酒宴歌舞: 1</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="2.500">仕宦功名: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0232" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>草创大还赠柳官迪</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">43</note>
+          <note type="characterCount">200</note>
+          <note type="lineCount">20</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>草创大还赠柳官迪</title>
+            <date when="744">744年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="744">744年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0232-place-1">
+              <placeName>济南</placeName>
+              <location>
+                <geo>36.671627 117.001319</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-farewell">离别酬赠</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+            <term ana="#theme-sorrow">愁苦漂泊</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>草创大还赠柳官迪</head>
+          <lg type="poem">
+          <l n="1">天地为橐籥，周流行太易。</l>
+          <l n="2">造化合元符，交媾腾精魄。</l>
+          <l n="3">自然成妙用，孰知其指的。</l>
+          <l n="4">罗络四季间，绵微无一隙。</l>
+          <l n="5">日月更出没，双光岂云只。</l>
+          <l n="6">姹女乘河车，黄金充辕轭。</l>
+          <l n="7">执枢相管辖，摧伏伤羽翮。</l>
+          <l n="8">朱鸟张炎威，白虎守本宅。</l>
+          <l n="9">相煎成苦老，消铄凝津液。</l>
+          <l n="10">髣髴明窗尘，死灰同至寂。</l>
+          <l n="11">捣冶入赤色，十二周律历。</l>
+          <l n="12">赫然称大还，与道本无隔。</l>
+          <l n="13">白日可抚弄，清都在咫尺。</l>
+          <l n="14">北酆落死名，南斗上生籍。</l>
+          <l n="15">抑予是何者，身在方士格。</l>
+          <l n="16">才术信纵横，世途自轻掷。</l>
+          <l n="17">吾求仙弃俗，君晓损胜益。</l>
+          <l n="18">不向金阙游，思为玉皇客。</l>
+          <l n="19">鸾车速风电，龙骑无鞭策。</l>
+          <l n="20">一举上九天，相携同所适。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="3.500">山水自然: 7</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="2.500">仕宦功名: 5</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="1.500">行旅空间: 3</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="1.000">仙道超越: 2</measure>
+          <measure type="themeDensity" ana="#theme-sorrow" unit="per100chars" quantity="1.000">愁苦漂泊: 2</measure>
+          <measure type="themeDensity" ana="#theme-farewell" unit="per100chars" quantity="0.500">离别酬赠: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0290" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>秋夜与刘砀山泛宴喜亭池</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">43</note>
+          <note type="characterCount">40</note>
+          <note type="lineCount">4</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>秋夜与刘砀山泛宴喜亭池</title>
+            <date when="744">744年秋</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="744">744年秋</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0290-place-1">
+              <placeName>砀山</placeName>
+              <location>
+                <geo>34.446899 116.372582</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-banquet">酒宴歌舞</term>
+            <term ana="#theme-political">仕宦功名</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>秋夜与刘砀山泛宴喜亭池</head>
+          <lg type="poem">
+          <l n="1">明宰试舟楫，张灯宴华池。</l>
+          <l n="2">文招梁苑客，歌动郢中儿。</l>
+          <l n="3">月色望不尽，空天交相宜。</l>
+          <l n="4">令人欲泛海，只待长风吹。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="7.500">山水自然: 3</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="7.500">行旅空间: 3</measure>
+          <measure type="themeDensity" ana="#theme-banquet" unit="per100chars" quantity="5.000">酒宴歌舞: 2</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="2.500">仕宦功名: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0341" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>题雍丘崔明府丹灶</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">43</note>
+          <note type="characterCount">56</note>
+          <note type="lineCount">4</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>题雍丘崔明府丹灶</title>
+            <date when="744">744年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="744">744年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0341-place-1">
+              <placeName>杞县</placeName>
+              <location>
+                <geo>34.555997 114.789423</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+            <term ana="#theme-war">边塞战争</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>题雍丘崔明府丹灶</head>
+          <lg type="poem">
+          <l n="1">美人为政本忘机，服药求仙事不违。</l>
+          <l n="2">叶县已泥丹灶毕，瀛洲当伴赤松归。</l>
+          <l n="3">先师有诀神将助，大圣无心火自飞。</l>
+          <l n="4">九转但能生羽翼，双凫忽去定何依。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="7.143">仙道超越: 4</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="3.571">行旅空间: 2</measure>
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="1.786">山水自然: 1</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="1.786">仕宦功名: 1</measure>
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="1.786">边塞战争: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0342" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>送蔡山人</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">43</note>
+          <note type="characterCount">50</note>
+          <note type="lineCount">5</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>送蔡山人</title>
+            <date when="744">744年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="744">744年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0342-place-1">
+              <placeName>杞县</placeName>
+              <location>
+                <geo>34.555997 114.789423</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-daoist">仙道超越</term>
+            <term ana="#theme-war">边塞战争</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>送蔡山人</head>
+          <lg type="poem">
+          <l n="1">我本不弃世，世人自弃我。</l>
+          <l n="2">一乘无倪舟，八极纵远柂。</l>
+          <l n="3">燕客期跃马，唐生安敢讥。</l>
+          <l n="4">采珠勿惊龙，大道可暗归。</l>
+          <l n="5">故山有松月，迟尔玩清晖。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="8.000">行旅空间: 4</measure>
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="6.000">山水自然: 3</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="2.000">仙道超越: 1</measure>
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="2.000">边塞战争: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0343" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>送杨山人归嵩山</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">43</note>
+          <note type="characterCount">40</note>
+          <note type="lineCount">4</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>送杨山人归嵩山</title>
+            <date when="744">744年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="744">744年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0343-place-1">
+              <placeName>杞县</placeName>
+              <location>
+                <geo>34.555997 114.789423</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>送杨山人归嵩山</head>
+          <lg type="poem">
+          <l n="1">我有万古宅，嵩阳玉女峰。</l>
+          <l n="2">长留一片月，挂在东溪松。</l>
+          <l n="3">尔去掇仙草，菖蒲花紫茸。</l>
+          <l n="4">岁晚或相访，青天骑白龙。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="15.000">山水自然: 6</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="2.500">行旅空间: 1</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="2.500">仕宦功名: 1</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="2.500">仙道超越: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0344" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>秋猎孟诸夜归置酒单父东楼观妓</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">43</note>
+          <note type="characterCount">100</note>
+          <note type="lineCount">10</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>秋猎孟诸夜归置酒单父东楼观妓</title>
+            <date when="744">744年秋</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="744">744年秋</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0344-place-1">
+              <placeName>杞县</placeName>
+              <location>
+                <geo>34.555997 114.789423</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-banquet">酒宴歌舞</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+            <term ana="#theme-war">边塞战争</term>
+            <term ana="#theme-sorrow">愁苦漂泊</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>秋猎孟诸夜归置酒单父东楼观妓</head>
+          <lg type="poem">
+          <l n="1">倾晖速短炬，走海无停川。</l>
+          <l n="2">冀餐圆丘草，欲以还颓年。</l>
+          <l n="3">此事不可得，微生若浮烟。</l>
+          <l n="4">骏发跨名驹，雕弓控鸣弦。</l>
+          <l n="5">鹰豪鲁草白，狐兔多肥鲜。</l>
+          <l n="6">邀遮相驰逐，遂出城东田。</l>
+          <l n="7">一扫四野空，喧呼鞍马前。</l>
+          <l n="8">归来献所获，炮炙宜霜天。</l>
+          <l n="9">出舞两美人，飘飖若云仙。</l>
+          <l n="10">留欢不知疲，清晓方来旋。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="5.000">山水自然: 5</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="4.000">行旅空间: 4</measure>
+          <measure type="themeDensity" ana="#theme-banquet" unit="per100chars" quantity="2.000">酒宴歌舞: 2</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="2.000">仕宦功名: 2</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="1.000">仙道超越: 1</measure>
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="1.000">边塞战争: 1</measure>
+          <measure type="themeDensity" ana="#theme-sorrow" unit="per100chars" quantity="1.000">愁苦漂泊: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0349" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>怀仙歌</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">43</note>
+          <note type="characterCount">56</note>
+          <note type="lineCount">4</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>怀仙歌</title>
+            <date when="744">744年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="744">744年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0349-place-1">
+              <placeName>济宁</placeName>
+              <location>
+                <geo>35.420269 116.593852</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-banquet">酒宴歌舞</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>怀仙歌</head>
+          <lg type="poem">
+          <l n="1">一鹤东飞过沧海，放心散漫知何在。</l>
+          <l n="2">仙人浩歌望我来，应攀玉树长相待。</l>
+          <l n="3">尧舜之事不足惊，自余嚣嚣直可轻。</l>
+          <l n="4">巨鼇莫戴三山去，我欲蓬莱顶上行。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="8.929">行旅空间: 5</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="5.357">仙道超越: 3</measure>
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="3.571">山水自然: 2</measure>
+          <measure type="themeDensity" ana="#theme-banquet" unit="per100chars" quantity="1.786">酒宴歌舞: 1</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="1.786">仕宦功名: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0350" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>赠任城卢主簿</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">43</note>
+          <note type="characterCount">40</note>
+          <note type="lineCount">4</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>赠任城卢主簿</title>
+            <date when="744">744年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="744">744年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0350-place-1">
+              <placeName>济宁</placeName>
+              <location>
+                <geo>35.420269 116.593852</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-farewell">离别酬赠</term>
+            <term ana="#theme-banquet">酒宴歌舞</term>
+            <term ana="#theme-sorrow">愁苦漂泊</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>赠任城卢主簿</head>
+          <lg type="poem">
+          <l n="1">海鸟知天风，窜身鲁门东。</l>
+          <l n="2">临觞不能饮，矫翼思凌空。</l>
+          <l n="3">钟鼓不为乐，烟霜谁与同。</l>
+          <l n="4">归飞未忍去，流泪谢鸳鸿。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="10.000">山水自然: 4</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="5.000">行旅空间: 2</measure>
+          <measure type="themeDensity" ana="#theme-banquet" unit="per100chars" quantity="5.000">酒宴歌舞: 2</measure>
+          <measure type="themeDensity" ana="#theme-farewell" unit="per100chars" quantity="2.500">离别酬赠: 1</measure>
+          <measure type="themeDensity" ana="#theme-sorrow" unit="per100chars" quantity="2.500">愁苦漂泊: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0358" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>对雪奉饯任城六父秩满归京</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">43</note>
+          <note type="characterCount">120</note>
+          <note type="lineCount">12</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>对雪奉饯任城六父秩满归京</title>
+            <date when="744">744年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="744">744年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0358-place-1">
+              <placeName>济宁</placeName>
+              <location>
+                <geo>35.420269 116.593852</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-farewell">离别酬赠</term>
+            <term ana="#theme-banquet">酒宴歌舞</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+            <term ana="#theme-war">边塞战争</term>
+            <term ana="#theme-sorrow">愁苦漂泊</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>对雪奉饯任城六父秩满归京</head>
+          <lg type="poem">
+          <l n="1">龙虎谢鞭策，鹓鸾不司晨。</l>
+          <l n="2">君看海上鹤，何似笼中鹑。</l>
+          <l n="3">独用天地心，浮云乃吾身。</l>
+          <l n="4">虽将簪组狎，若与烟霞亲。</l>
+          <l n="5">季父有英风，白眉超常伦。</l>
+          <l n="6">一官即梦寐，脱屐归西秦。</l>
+          <l n="7">窦公敞华筵，墨客尽来臻。</l>
+          <l n="8">燕歌落胡鴈，郢曲回阳春。</l>
+          <l n="9">征马百度嘶，游车动行尘。</l>
+          <l n="10">踌躇未忍去，恋此四座人。</l>
+          <l n="11">饯离驻高驾，惜别空殷勤。</l>
+          <l n="12">何时竹林下，更与步兵邻。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="6.667">行旅空间: 8</measure>
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="5.833">山水自然: 7</measure>
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="3.333">边塞战争: 4</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="2.500">仕宦功名: 3</measure>
+          <measure type="themeDensity" ana="#theme-farewell" unit="per100chars" quantity="0.833">离别酬赠: 1</measure>
+          <measure type="themeDensity" ana="#theme-banquet" unit="per100chars" quantity="0.833">酒宴歌舞: 1</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="0.833">仙道超越: 1</measure>
+          <measure type="themeDensity" ana="#theme-sorrow" unit="per100chars" quantity="0.833">愁苦漂泊: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0409" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>过四皓墓</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">43</note>
+          <note type="characterCount">80</note>
+          <note type="lineCount">8</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>过四皓墓</title>
+            <date when="744">744年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="744">744年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0409-place-1">
+              <placeName>商州</placeName>
+              <location>
+                <geo>33.868884 109.947542</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+            <term ana="#theme-sorrow">愁苦漂泊</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>过四皓墓</head>
+          <lg type="poem">
+          <l n="1">我行至商洛，幽独访神仙。</l>
+          <l n="2">园绮复安在，云萝尚宛然。</l>
+          <l n="3">荒凉千古迹，芜没四坟连。</l>
+          <l n="4">伊昔炼金鼎，何年闭玉泉。</l>
+          <l n="5">陇寒惟有月，松古渐无烟。</l>
+          <l n="6">木魅风号去，山精雨啸旋。</l>
+          <l n="7">紫芝高咏罢，青史旧名传。</l>
+          <l n="8">今日并如此，哀哉信可怜。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="10.000">山水自然: 8</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="2.500">行旅空间: 2</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="2.500">仙道超越: 2</measure>
+          <measure type="themeDensity" ana="#theme-sorrow" unit="per100chars" quantity="2.500">愁苦漂泊: 2</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="1.250">仕宦功名: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0410" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>赠参寥子</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">43</note>
+          <note type="characterCount">90</note>
+          <note type="lineCount">9</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>赠参寥子</title>
+            <date when="744">744年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="744">744年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0410-place-1">
+              <placeName>商州</placeName>
+              <location>
+                <geo>33.868884 109.947542</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-farewell">离别酬赠</term>
+            <term ana="#theme-banquet">酒宴歌舞</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+            <term ana="#theme-war">边塞战争</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>赠参寥子</head>
+          <lg type="poem">
+          <l n="1">白鹤飞天书，南荆访高士。</l>
+          <l n="2">五云在岘山，果得参寥子。</l>
+          <l n="3">肮脏辞故园，昂藏入君门。</l>
+          <l n="4">天子分玉帛，百官接话言。</l>
+          <l n="5">毫墨时洒落，探玄有奇作。</l>
+          <l n="6">着论穷天人，千春秘麟阁。</l>
+          <l n="7">长揖不受官，拂衣归林峦。</l>
+          <l n="8">余亦去金马，藤萝同所欢。</l>
+          <l n="9">相思在何处，桂树青云端。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="4.444">山水自然: 4</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="3.333">行旅空间: 3</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="3.333">仕宦功名: 3</measure>
+          <measure type="themeDensity" ana="#theme-farewell" unit="per100chars" quantity="1.111">离别酬赠: 1</measure>
+          <measure type="themeDensity" ana="#theme-banquet" unit="per100chars" quantity="1.111">酒宴歌舞: 1</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="1.111">仙道超越: 1</measure>
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="1.111">边塞战争: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0411" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>商山四皓</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">43</note>
+          <note type="characterCount">100</note>
+          <note type="lineCount">10</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>商山四皓</title>
+            <date when="744">744年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="744">744年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0411-place-1">
+              <placeName>商州</placeName>
+              <location>
+                <geo>33.868884 109.947542</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-war">边塞战争</term>
+            <term ana="#theme-sorrow">愁苦漂泊</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>商山四皓</head>
+          <lg type="poem">
+          <l n="1">白发四老人，昂藏南山侧。</l>
+          <l n="2">偃卧松雪间，冥翳不可识。</l>
+          <l n="3">云窗拂青霭，石壁横翠色。</l>
+          <l n="4">龙虎方战争，于焉自休息。</l>
+          <l n="5">秦人失金镜，汉祖升紫极。</l>
+          <l n="6">阴虹浊太阳，前星遂沦匿。</l>
+          <l n="7">一行佐明圣，倏起生羽翼。</l>
+          <l n="8">功成身不居，舒卷在胸臆。</l>
+          <l n="9">窅冥合元化，茫昧信难测。</l>
+          <l n="10">飞声塞天衢，万古仰遗则。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="4.000">山水自然: 4</measure>
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="2.000">边塞战争: 2</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="1.000">行旅空间: 1</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="1.000">仕宦功名: 1</measure>
+          <measure type="themeDensity" ana="#theme-sorrow" unit="per100chars" quantity="1.000">愁苦漂泊: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0430" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>赠饶阳张司户燧</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">43</note>
+          <note type="characterCount">90</note>
+          <note type="lineCount">9</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>赠饶阳张司户燧</title>
+            <date when="744">744年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="744">744年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0430-place-1">
+              <placeName>深州</placeName>
+              <location>
+                <geo>38.006561 115.566379</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-banquet">酒宴歌舞</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+            <term ana="#theme-sorrow">愁苦漂泊</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>赠饶阳张司户燧</head>
+          <lg type="poem">
+          <l n="1">朝饮苍梧泉，夕栖碧海烟。</l>
+          <l n="2">宁知鸾凤意，远托椅桐前。</l>
+          <l n="3">慕蔺岂曩古，攀嵇是当年。</l>
+          <l n="4">愧非黄石老，安识子房贤。</l>
+          <l n="5">功业嗟落日，容华弃徂川。</l>
+          <l n="6">一语已道意，三山期着鞭。</l>
+          <l n="7">蹉跎人间世，寥落壶中天。</l>
+          <l n="8">独见游物祖，探元穷化先。</l>
+          <l n="9">何当共携手，相与排冥筌。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="4.444">山水自然: 4</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="3.333">仕宦功名: 3</measure>
+          <measure type="themeDensity" ana="#theme-sorrow" unit="per100chars" quantity="2.222">愁苦漂泊: 2</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="1.111">行旅空间: 1</measure>
+          <measure type="themeDensity" ana="#theme-banquet" unit="per100chars" quantity="1.111">酒宴歌舞: 1</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="1.111">仙道超越: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0434" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>访道安陵遇盖还为余造真箓临别留赠</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">43</note>
+          <note type="characterCount">160</note>
+          <note type="lineCount">16</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>访道安陵遇盖还为余造真箓临别留赠</title>
+            <date when="744">744年冬</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="744">744年冬</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0434-place-1">
+              <placeName>吴桥</placeName>
+              <location>
+                <geo>37.634013 116.397931</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-farewell">离别酬赠</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>访道安陵遇盖还为余造真箓临别留赠</head>
+          <lg type="poem">
+          <l n="1">清水见白石，仙人识青童。</l>
+          <l n="2">安陵盖夫子，十岁与天通。</l>
+          <l n="3">悬河与微言，谈论安可穷。</l>
+          <l n="4">能令二千石，抚背惊神聪。</l>
+          <l n="5">挥毫赠新诗，高价掩山东。</l>
+          <l n="6">至今平原客，感激慕清风。</l>
+          <l n="7">学道北海仙，传书蘂珠宫。</l>
+          <l n="8">丹田了玉阙，白日思云空。</l>
+          <l n="9">为我草真箓，天人慙妙工。</l>
+          <l n="10">七元洞豁落，八角辉星虹。</l>
+          <l n="11">三灾荡璇玑，蛟龙翼微躬。</l>
+          <l n="12">举手谢天地，虚无齐始终。</l>
+          <l n="13">黄金满高堂，荅荷难克充。</l>
+          <l n="14">下笑世上士，沈魂北罗酆。</l>
+          <l n="15">昔日万乘坟，今成一科蓬。</l>
+          <l n="16">赠言若可重，实此轻华嵩。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="5.625">山水自然: 9</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="4.375">仙道超越: 7</measure>
+          <measure type="themeDensity" ana="#theme-farewell" unit="per100chars" quantity="1.875">离别酬赠: 3</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="1.250">仕宦功名: 2</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="0.625">行旅空间: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0444" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>南陵别儿童入京</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">41</note>
+          <note type="characterCount">84</note>
+          <note type="lineCount">6</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>南陵别儿童入京</title>
+            <date when="742">742年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="742">742年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0444-place-1">
+              <placeName>曲阜</placeName>
+              <location>
+                <geo>35.587086 116.992898</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-banquet">酒宴歌舞</term>
+            <term ana="#theme-political">仕宦功名</term>
+            <term ana="#theme-daoist">仙道超越</term>
+            <term ana="#theme-war">边塞战争</term>
+            <term ana="#theme-sorrow">愁苦漂泊</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>南陵别儿童入京</head>
+          <lg type="poem">
+          <l n="1">白酒新熟山中归，黄鸡啄黍秋正肥。</l>
+          <l n="2">呼童烹鸡酌白酒，儿女嬉笑牵人衣。</l>
+          <l n="3">高歌取醉欲自慰，起舞落日争光辉。</l>
+          <l n="4">游说万乘苦不早，着鞭跨马涉远道。</l>
+          <l n="5">会稽愚妇轻买臣，余亦辞家西入秦。</l>
+          <l n="6">仰天大笑出门去，我辈岂是蓬蒿人。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-banquet" unit="per100chars" quantity="7.143">酒宴歌舞: 6</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="4.762">行旅空间: 4</measure>
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="3.571">山水自然: 3</measure>
+          <measure type="themeDensity" ana="#theme-daoist" unit="per100chars" quantity="2.381">仙道超越: 2</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="1.190">仕宦功名: 1</measure>
+          <measure type="themeDensity" ana="#theme-war" unit="per100chars" quantity="1.190">边塞战争: 1</measure>
+          <measure type="themeDensity" ana="#theme-sorrow" unit="per100chars" quantity="1.190">愁苦漂泊: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+  <TEI xml:id="libai-stage3-changan-0445" xml:lang="zh-Hans">
+    <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>詶张卿夜宿南陵见赠</title>
+          <author>李白</author>
+        </titleStmt>
+        <publicationStmt>
+          <p>Encoded for local capstone research use.</p>
+        </publicationStmt>
+        <notesStmt>
+          <note type="period">Stage 3: Chang'an, 742-744</note>
+          <note type="kml">Stage3_Changan_742_744.kml</note>
+          <note type="approxAge">41</note>
+          <note type="characterCount">150</note>
+          <note type="lineCount">15</note>
+          <note type="sourceFiles">
+            <list>
+              <item>0524.txt</item>
+              <item>新建 文本文档.txt</item>
+            </list>
+          </note>
+        </notesStmt>
+        <sourceDesc>
+          <bibl>
+            <author>李白</author>
+            <title>詶张卿夜宿南陵见赠</title>
+            <date when="742">742年</date>
+          </bibl>
+        </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+        <creation>
+          <date when="742">742年</date>
+        </creation>
+        <settingDesc>
+          <listPlace>
+            <place xml:id="libai-stage3-changan-0445-place-1">
+              <placeName>曲阜</placeName>
+              <location>
+                <geo>35.587086 116.992898</geo>
+              </location>
+            </place>
+          </listPlace>
+        </settingDesc>
+        <textClass>
+          <catRef target="#stage3-changan"/>
+          <keywords scheme="#themes">
+            <term ana="#theme-nature">山水自然</term>
+            <term ana="#theme-travel">行旅空间</term>
+            <term ana="#theme-farewell">离别酬赠</term>
+            <term ana="#theme-banquet">酒宴歌舞</term>
+            <term ana="#theme-political">仕宦功名</term>
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <rendition xml:id="lineBasedPoem">Poem text is encoded line by line with lg/l.</rendition>
+        </tagsDecl>
+      </encodingDesc>
+      <revisionDesc>
+        <change when="2026-05-30">Assigned to Stage 3: Chang'an, 742-744 for four-period analysis.</change>
+      </revisionDesc>
+    </teiHeader>
+    <text>
+      <body>
+        <div type="poem" ana="#stage3-changan">
+          <head>詶张卿夜宿南陵见赠</head>
+          <lg type="poem">
+          <l n="1">月出鲁城东，明如天上雪。</l>
+          <l n="2">鲁女惊莎鸡，鸣机应秋节。</l>
+          <l n="3">当君相思夜，火落金风高。</l>
+          <l n="4">河汉挂户牖，欲济无轻舠。</l>
+          <l n="5">我昔辞林丘，云龙忽相见。</l>
+          <l n="6">客星动太微，朝去洛阳殿。</l>
+          <l n="7">尔来得茂彦，七叶仕汉余。</l>
+          <l n="8">身为下邳客，家有圯桥书。</l>
+          <l n="9">傅说未梦时，终当起岩野。</l>
+          <l n="10">万古骑辰星，光辉照天下。</l>
+          <l n="11">与君各未遇，长策委蒿莱。</l>
+          <l n="12">宝刀隐玉匣，锈涩空莓苔。</l>
+          <l n="13">遂令世上愚，轻我土与灰。</l>
+          <l n="14">一朝攀龙去，鼃黾安在哉？</l>
+          <l n="15">故山定有酒，与尔倾金罍。</l>
+          </lg>
+        </div>
+      </body>
+      <back>
+        <div type="analysisMeasures">
+          <measure type="themeDensity" ana="#theme-nature" unit="per100chars" quantity="4.667">山水自然: 7</measure>
+          <measure type="themeDensity" ana="#theme-travel" unit="per100chars" quantity="3.333">行旅空间: 5</measure>
+          <measure type="themeDensity" ana="#theme-political" unit="per100chars" quantity="2.667">仕宦功名: 4</measure>
+          <measure type="themeDensity" ana="#theme-farewell" unit="per100chars" quantity="0.667">离别酬赠: 1</measure>
+          <measure type="themeDensity" ana="#theme-banquet" unit="per100chars" quantity="0.667">酒宴歌舞: 1</measure>
+        </div>
+      </back>
+    </text>
+  </TEI>
+</teiCorpus>
