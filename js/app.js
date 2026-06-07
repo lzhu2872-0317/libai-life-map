@@ -218,10 +218,6 @@
       }
     });
 
-    document.getElementById("playRoute").addEventListener("click", () => {
-      state.mapController.animateRoute(state.routePoints);
-    });
-
     document.getElementById("detailOpen").addEventListener("click", () => {
       document.getElementById("placeDetail").classList.remove("is-collapsed");
       document.getElementById("detailOpen").classList.remove("is-visible");

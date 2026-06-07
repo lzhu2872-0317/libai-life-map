@@ -327,18 +327,14 @@
   width: 32px;
   height: 32px;
   place-items: center;
-  border: 2px solid #fff;
+  border: 2px solid #f8f1dc;
   border-radius: 50% 50% 50% 8px;
   color: #fff;
-  background: var(--primary);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.24);
+  background: linear-gradient(145deg, #174f4a, #28736a);
+  box-shadow: 0 8px 18px rgba(23, 79, 74, 0.34);
   transform: rotate(-45deg);
   font-size: 0.72rem;
   font-weight: 800;
-}
-
-.fallback-marker span::first-line {
-  transform: rotate(45deg);
 }
 
 .fallback-marker em {
@@ -352,25 +348,54 @@
   white-space: nowrap;
 }
 
-.fallback-marker[data-category="birth"] span,
-.fallback-marker[data-category="home"] span {
-  background: #2e7d59;
-}
-
-.fallback-marker[data-category="poem"] span {
-  background: #b88746;
-}
-
-.fallback-marker[data-category="court"] span {
-  background: #225f70;
-}
-
-.fallback-marker[data-category="exile"] span {
-  background: #a6523f;
+.fallback-marker span::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #f4d28b;
+  box-shadow: 0 0 0 3px rgba(244, 210, 139, 0.18);
 }
 
 .fallback-marker.active span {
   animation: markerBreath 1.2s infinite;
+}
+
+.fallback-marker[data-category="stage"] {
+  display: none;
+}
+
+.fallback-zoom-controls {
+  position: absolute;
+  right: 1rem;
+  bottom: 4.2rem;
+  z-index: 4;
+  display: grid;
+  overflow: hidden;
+  border: 1px solid rgba(39, 49, 47, 0.18);
+  border-radius: 12px;
+  background: rgba(255, 253, 241, 0.94);
+  box-shadow: var(--shadow-sm);
+}
+
+.fallback-zoom-controls button {
+  display: grid;
+  width: 38px;
+  height: 36px;
+  place-items: center;
+  border: 0;
+  color: #174f4a;
+  background: transparent;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.fallback-zoom-controls button + button {
+  border-top: 1px solid rgba(39, 49, 47, 0.12);
+}
+
+.fallback-zoom-controls button:hover {
+  background: rgba(23, 79, 74, 0.08);
 }
 
 .fallback-info {
@@ -468,20 +493,11 @@
   border-radius: 50%;
 }
 
-.legend-dot.birth {
-  background: #2e7d59;
-}
-
-.legend-dot.poem {
-  background: #b88746;
-}
-
-.legend-dot.court {
-  background: #225f70;
-}
-
+.legend-dot.birth,
+.legend-dot.poem,
+.legend-dot.court,
 .legend-dot.exile {
-  background: #a6523f;
+  background: #28736a;
 }
 
 .map-marker {
@@ -498,39 +514,28 @@
   width: 32px;
   height: 32px;
   place-items: center;
-  border: 2px solid rgba(255, 255, 255, 0.92);
+  border: 2px solid #f8f1dc;
   border-radius: 50% 50% 50% 8px;
   color: #fff;
-  background: var(--primary);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.24);
+  background: linear-gradient(145deg, #174f4a, #28736a);
+  box-shadow: 0 8px 18px rgba(23, 79, 74, 0.34);
   transform: rotate(-45deg);
 }
 
 .marker-pin span {
-  transform: rotate(45deg);
-  font-size: 0.72rem;
-  font-weight: 700;
-}
-
-.map-marker[data-category="birth"] .marker-pin,
-.map-marker[data-category="home"] .marker-pin {
-  background: #2e7d59;
-}
-
-.map-marker[data-category="poem"] .marker-pin {
-  background: #b88746;
-}
-
-.map-marker[data-category="court"] .marker-pin {
-  background: #225f70;
-}
-
-.map-marker[data-category="exile"] .marker-pin {
-  background: #a6523f;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #f4d28b;
+  box-shadow: 0 0 0 3px rgba(244, 210, 139, 0.18);
 }
 
 .map-marker.active .marker-pin {
   animation: markerBreath 1.2s infinite;
+}
+
+.map-marker[data-category="stage"] {
+  display: none;
 }
 
 .marker-label {
@@ -555,11 +560,11 @@
   width: 44px;
   height: 44px;
   place-items: center;
-  border: 2px solid #fff;
+  border: 2px solid #f8f1dc;
   border-radius: 50%;
   color: #fff;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.26);
+  background: linear-gradient(145deg, #174f4a, #28736a);
+  box-shadow: 0 10px 22px rgba(23, 79, 74, 0.34);
   font-weight: 800;
 }
 

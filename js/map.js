@@ -76,13 +76,15 @@
         this.div.dataset.locationId = this.location.id;
         this.div.dataset.category = this.location.category;
         this.div.innerHTML = `
-          <span class="marker-pin"><span>${this.location.importance}</span></span>
+          <span class="marker-pin"><span aria-hidden="true"></span></span>
           <span class="marker-label">${window.LiBaiUI.escapeHtml(this.location.name)}</span>
         `;
         this.div.addEventListener("click", () => this.onClick(this.location.id));
         this.getPanes().overlayMouseTarget.appendChild(this.div);
         requestAnimationFrame(() => {
-          this.div.style.animation = "fadeIn 360ms var(--ease) both";
+          if (this.div) {
+            this.div.style.animation = "fadeIn 360ms var(--ease) both";
+          }
         });
       }
 
@@ -407,10 +409,66 @@
       east: 135.2,
       west: 73.5
     };
+    const minZoomRatio = 0.18;
     let currentBounds = chinaBounds;
     let activeLocationId = null;
     let regionLayerVisible = true;
     let visibleLocationIds = new Set(data.locations.locations.map((location) => location.id));
+    let currentAnimatedPoints = routePoints;
+
+    function boundsCenter(bounds) {
+      return {
+        lat: (bounds.north + bounds.south) / 2,
+        lng: (bounds.east + bounds.west) / 2
+      };
+    }
+
+    function clampBounds(bounds) {
+      const fullLatSpan = chinaBounds.north - chinaBounds.south;
+      const fullLngSpan = chinaBounds.east - chinaBounds.west;
+      const minLatSpan = fullLatSpan * minZoomRatio;
+      const minLngSpan = fullLngSpan * minZoomRatio;
+      const center = boundsCenter(bounds);
+      const latSpan = Math.min(fullLatSpan, Math.max(minLatSpan, bounds.north - bounds.south));
+      const lngSpan = Math.min(fullLngSpan, Math.max(minLngSpan, bounds.east - bounds.west));
+
+      let north = center.lat + latSpan / 2;
+      let south = center.lat - latSpan / 2;
+      let east = center.lng + lngSpan / 2;
+      let west = center.lng - lngSpan / 2;
+
+      if (north > chinaBounds.north) {
+        south -= north - chinaBounds.north;
+        north = chinaBounds.north;
+      }
+      if (south < chinaBounds.south) {
+        north += chinaBounds.south - south;
+        south = chinaBounds.south;
+      }
+      if (east > chinaBounds.east) {
+        west -= east - chinaBounds.east;
+        east = chinaBounds.east;
+      }
+      if (west < chinaBounds.west) {
+        east += chinaBounds.west - west;
+        west = chinaBounds.west;
+      }
+
+      return { north, south, east, west };
+    }
+
+    function zoomFallback(factor) {
+      const center = boundsCenter(currentBounds);
+      const latSpan = (currentBounds.north - currentBounds.south) * factor;
+      const lngSpan = (currentBounds.east - currentBounds.west) * factor;
+      currentBounds = clampBounds({
+        north: center.lat + latSpan / 2,
+        south: center.lat - latSpan / 2,
+        east: center.lng + lngSpan / 2,
+        west: center.lng - lngSpan / 2
+      });
+      render(currentAnimatedPoints);
+    }
 
     function routePath(points) {
       return points.map((point, index) => {
@@ -439,6 +497,7 @@
     }
 
     function render(animatedPoints = routePoints) {
+      currentAnimatedPoints = animatedPoints;
       const regionSvg = data.locations.geojson.features.map((feature) => `
         <polygon class="fallback-region" points="${regionPolygon(feature)}" data-visible="${regionLayerVisible ? "true" : "false"}"></polygon>
       `).join("");
@@ -448,7 +507,7 @@
           const projected = projectPoint(location, currentBounds);
           return `
             <button class="fallback-marker ${location.id === activeLocationId ? "active" : ""}" type="button" data-location-id="${window.LiBaiUI.escapeHtml(location.id)}" data-category="${window.LiBaiUI.escapeHtml(location.category)}" style="left:${projected.x}%;top:${projected.y}%">
-              <span>${location.importance}</span>
+              <span aria-hidden="true"></span>
               <em>${window.LiBaiUI.escapeHtml(location.name)}</em>
             </button>
           `;
@@ -469,6 +528,10 @@
             <path class="fallback-route-active" d="${routePath(animatedPoints)}"></path>
           </svg>
           <div class="fallback-markers">${markerHtml}</div>
+          <div class="fallback-zoom-controls" aria-label="Map zoom controls">
+            <button type="button" data-fallback-zoom="in" aria-label="Zoom in">+</button>
+            <button type="button" data-fallback-zoom="out" aria-label="Zoom out">-</button>
+          </div>
           <aside class="fallback-info" id="fallbackInfo">Google Maps is unavailable. The local fallback map is active.</aside>
         </div>
       `;
@@ -478,6 +541,18 @@
           const locationId = button.dataset.locationId;
           openInfo(locationId);
           onLocationSelect(locationId, { source: "fallback-map" });
+        });
+      });
+
+      const fallbackMap = mapNode.querySelector(".fallback-map");
+      fallbackMap?.addEventListener("wheel", (event) => {
+        event.preventDefault();
+        zoomFallback(event.deltaY < 0 ? 0.72 : 1.28);
+      }, { passive: false });
+
+      mapNode.querySelectorAll("[data-fallback-zoom]").forEach((button) => {
+        button.addEventListener("click", () => {
+          zoomFallback(button.dataset.fallbackZoom === "in" ? 0.72 : 1.28);
         });
       });
 
@@ -507,6 +582,7 @@
           east: location.lng + 6.5,
           west: location.lng - 6.5
         };
+        currentBounds = clampBounds(currentBounds);
       }
       render(window.LiBaiRoute.getRouteSegmentUntil(routePoints, locationId));
     }
