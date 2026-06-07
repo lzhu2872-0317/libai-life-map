@@ -25,9 +25,9 @@
   }
 
   function convertArticleType(type) {
-    if (type === 2) return "诗";
-    if (type === 4) return "文";
-    return "作品";
+    if (type === 2) return "Poem";
+    if (type === 4) return "Prose";
+    return "Work";
   }
 
   function adapt(cnkgraphLikeData) {
@@ -55,8 +55,8 @@
           detail: [
             activity.OldYear ? `${activity.OldYear}。` : "",
             activity.Activity || "",
-            activity.Subject ? ` 作品：${activity.Subject}` : "",
-            activity.People ? ` 相关人物：${activity.People}` : ""
+            activity.Subject ? ` Works: ${activity.Subject}` : "",
+            activity.People ? ` Related people: ${activity.People}` : ""
           ].join("")
         });
       });
@@ -71,7 +71,7 @@
           year: poem.Year || null,
           locationId: id,
           genre: convertArticleType(poem.ArticleType),
-          excerpt: poem.Summary || "本地同构样本，未复制目标站原文。",
+          excerpt: poem.Summary || "Local modeled sample; no source-site text copied.",
           theme: [marker.Title, convertArticleType(poem.ArticleType)],
           summary: poem.Summary || ""
         });
@@ -90,7 +90,7 @@
         lat: marker.Latitude,
         lng: marker.Longitude,
         years: years.length ? Array.from(new Set(years)) : [],
-        period: marker.Summary || "李白行迹",
+        period: marker.Summary || "Li Bai Itinerary",
         category: getCategory(marker),
         importance: Math.min(5, Math.max(2, locationPoems.length + locationEvents.length)),
         poemCount: locationPoems.length,
@@ -104,11 +104,11 @@
     return {
       locations: {
         meta: {
-          title: cnkgraphLikeData.Title || "李白行迹地图",
+          title: cnkgraphLikeData.Title || "Li Bai Life Map",
           center: { lat: trace.CenterLatitude || 34.2, lng: trace.CenterLongitude || 104.8 },
           zoom: trace.ZoomLevel || 4,
           period: "701-762",
-          description: "目标站字段结构的本地同构数据。"
+          description: "Local data modeled on the target site's field structure."
         },
         routeOrder,
         locations,
@@ -118,38 +118,38 @@
         }
       },
       timeline: {
-        meta: { title: "李白生平时间线", range: [701, 762] },
+        meta: { title: "Li Bai Life Timeline", range: [701, 762] },
         events: events.sort((a, b) => (a.year || 0) - (b.year || 0))
       },
       poems: {
-        meta: { title: "李白诗词地理样本", note: "由同构数据转换。" },
+        meta: { title: "Li Bai Poetry Geography Samples", note: "Converted from locally modeled data." },
         poems,
         themes: []
       },
       biography: {
         profile: {
-          name: "李白",
-          courtesyName: "太白",
-          alias: "青莲居士",
-          dynasty: "唐",
+          name: "Li Bai",
+          courtesyName: "Taibai",
+          alias: "Qinglian Jushi",
+          dynasty: "Tang",
           years: "701-762",
-          summary: "此页面使用目标站字段结构的本地自建同构数据，复刻布局、字段和交互，不复制目标站原始完整内容。",
-          keywords: ["盛唐", "行迹", "编年", "诗作", "地图"],
+          summary: "This page uses locally modeled data shaped like the target site's field structure to recreate layout, fields, and interactions without copying the complete original source content.",
+          keywords: ["High Tang", "Itinerary", "Chronology", "Poems", "Map"],
           stats: {
             locations: locations.length,
             timelineEvents: events.length,
             poemSamples: poems.length,
-            routeDistanceLabel: "本地样本"
+            routeDistanceLabel: "Local sample"
           }
         },
         relationships: [],
         chapters: [
           {
             id: "cnk-like",
-            title: "李白行迹同构数据",
+            title: "Li Bai Itinerary Data",
             years: "701-762",
             locationIds: routeOrder,
-            summary: trace.Detail || "目标站字段结构同构样本。"
+            summary: trace.Detail || "A local data sample modeled on the target site's field structure."
           }
         ]
       },

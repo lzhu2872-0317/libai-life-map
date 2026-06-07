@@ -28,6 +28,12 @@
   function renderProfile(profile, source) {
     const el = document.getElementById("profileSummary");
     const stats = profile.stats;
+    const sourceLabels = {
+      "tei-docs": "TEI and CSV corpus",
+      "cnkgraph-like": "locally modeled CNKGraph-style data",
+      json: "local JSON",
+      inline: "inline fallback data"
+    };
     el.innerHTML = `
       <p class="eyebrow">${escapeHtml(profile.dynasty)} · ${escapeHtml(profile.years)}</p>
       <h2>${escapeHtml(profile.name)} <small>${escapeHtml(profile.courtesyName)} / ${escapeHtml(profile.alias)}</small></h2>
@@ -38,7 +44,7 @@
         <div class="metric"><strong>${stats.poemSamples}</strong><span>Poems</span></div>
       </div>
       <div class="tag-row">${profile.keywords.map((item) => `<span class="tag">${escapeHtml(item)}</span>`).join("")}</div>
-      <p class="data-source">Data source: ${source === "json" ? "local JSON" : "inline fallback data"}</p>
+      <p class="data-source">Data source: ${sourceLabels[source] || "local data"}</p>
     `;
   }
 
@@ -277,9 +283,10 @@
   function renderThemeStats(summaryRows, densityRows, voyantStats) {
     const container = document.getElementById("themeStats");
     if (!container || !summaryRows || !densityRows) return;
+    const translate = window.LiBaiTranslations;
     const maxValue = Math.max(...densityRows.map((row) => Number(row.per_100_chars) || 0), 1);
     const grouped = densityRows.reduce((dict, row) => {
-      const stageName = row.stage || row.chinese_stage;
+      const stageName = translate ? translate.stage(row.stage || row.chinese_stage) : (row.stage || row.chinese_stage);
       if (!dict[stageName]) dict[stageName] = [];
       dict[stageName].push(row);
       return dict;
@@ -292,10 +299,10 @@
           <tbody>
             ${summaryRows.map((row) => `
               <tr>
-                <td>${escapeHtml(row.stage || row.chinese_stage)}</td>
+                <td>${escapeHtml(translate ? translate.stage(row.stage || row.chinese_stage) : (row.stage || row.chinese_stage))}</td>
                 <td>${escapeHtml(row.poems)}</td>
                 <td>${escapeHtml(row.year_range)}</td>
-                <td>${escapeHtml(row.main_places)}</td>
+                <td>${escapeHtml(translate ? translate.mainPlaces(row.main_places) : row.main_places)}</td>
               </tr>
             `).join("")}
           </tbody>
@@ -320,7 +327,7 @@
                 const value = Number(row.per_100_chars) || 0;
                 return `
                   <div class="theme-bar-row">
-                    <span>${escapeHtml(row.theme)}</span>
+                    <span>${escapeHtml(translate ? translate.theme(row.theme) : row.theme)}</span>
                     <i class="theme-bar-track"><b class="theme-bar bar-${(stageIndex + rowIndex) % 6}" style="width:${Math.max(5, value / maxValue * 100)}%"></b></i>
                     <em>${value.toFixed(2)}</em>
                   </div>
@@ -341,7 +348,8 @@
                   const value = Number(row.count) || 0;
                   const size = 13 + Math.round((value / maxCloud) * 28);
                   const tone = (stageIndex + rowIndex) % 6;
-                  return `<span class="cloud-word tone-${tone}" style="font-size:${size}px" title="${escapeHtml(row.word)}: ${value}">${escapeHtml(row.word)}</span>`;
+                  const label = translate ? translate.imageryTerm(row.word) : row.word;
+                  return `<span class="cloud-word tone-${tone}" style="font-size:${size}px" title="${escapeHtml(label)}: ${value}">${escapeHtml(label)}</span>`;
                 }).join("")}
               </div>
             </article>
@@ -353,7 +361,7 @@
         <div class="trend-chart">
           ${visibleTrends.map((trend, trendIndex) => `
             <article class="trend-row">
-              <strong>${escapeHtml(trend.term)}</strong>
+              <strong>${escapeHtml(translate ? translate.imageryTerm(trend.term) : trend.term)}</strong>
               <div class="trend-bars">
                 ${trend.values.map((value, stageIndex) => `
                   <span class="trend-bar-wrap" title="${escapeHtml(value.stageLabel)}: ${value.count} hits / ${value.per1000}‰">

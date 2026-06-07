@@ -97,6 +97,9 @@
   }
 
   function normalizeId(value) {
+    if (window.LiBaiTranslations) {
+      return window.LiBaiTranslations.placeId(value);
+    }
     return String(value || "")
       .trim()
       .toLowerCase()
@@ -115,10 +118,14 @@
       const age = Number(notesByType(tei, "approxAge") || 0);
       const characterCount = Number(notesByType(tei, "characterCount") || 0);
       const lineCount = Number(notesByType(tei, "lineCount") || 0);
-      const placeName = firstByTag(tei, "placeName")?.textContent?.trim() || "Unknown";
+      const rawPlaceName = firstByTag(tei, "placeName")?.textContent?.trim() || "Unknown";
+      const placeName = window.LiBaiTranslations ? window.LiBaiTranslations.placeName(rawPlaceName) : rawPlaceName;
       const geo = (firstByTag(tei, "geo")?.textContent?.trim() || "").split(/\s+/).map(Number);
       const lines = allByTag(tei, "l").map((line) => line.textContent.trim());
-      const themes = allByTag(tei, "term").map((term) => term.textContent.trim());
+      const themes = allByTag(tei, "term").map((term) => {
+        const value = term.textContent.trim();
+        return window.LiBaiTranslations ? window.LiBaiTranslations.theme(value) : value;
+      });
 
       return {
         id: tei.getAttribute("xml:id") || `${stageConfig.id}-${index + 1}`,
@@ -127,7 +134,7 @@
         age,
         characterCount,
         lineCount,
-        locationId: normalizeId(placeName),
+        locationId: normalizeId(rawPlaceName),
         locationName: placeName,
         lat: geo[0],
         lng: geo[1],
@@ -167,7 +174,7 @@
             eventIds: [],
             poemIds: [],
             summary: "",
-            image: `assets/images/location-${poem.locationId}.svg`,
+            image: window.LiBaiTranslations ? window.LiBaiTranslations.placeImage(poem.locationId) : `assets/images/location-${poem.locationId}.svg`,
             stageCounts: {}
           });
         }
@@ -190,10 +197,14 @@
   function buildEvents(stages, summaryRows) {
     return stages.map((stage, index) => {
       const summary = summaryRows[index] || {};
-      const topPlaces = summary.main_places || stage.poems
+      const rawTopPlaces = summary.main_places || stage.poems
         .slice(0, 8)
         .map((poem) => poem.locationName)
         .join("; ");
+      const topPlaces = window.LiBaiTranslations ? window.LiBaiTranslations.mainPlaces(rawTopPlaces) : rawTopPlaces;
+      const topThemes = summary.top_themes_per_100_chars
+        ? (window.LiBaiTranslations ? window.LiBaiTranslations.themeDensity(summary.top_themes_per_100_chars) : summary.top_themes_per_100_chars)
+        : "see the charts below";
       const firstPoemWithGeo = stage.poems.find((poem) => Number.isFinite(poem.lat) && Number.isFinite(poem.lng));
       return {
         id: `${stage.id}-overview`,
@@ -202,7 +213,7 @@
         locationId: firstPoemWithGeo ? firstPoemWithGeo.locationId : "",
         type: "stage",
         summary: `${stage.title}, ${summary.poems || stage.poems.length} poems, main places: ${topPlaces}`,
-        detail: `Years: ${stage.years}; average age: ${summary.avg_age || "unknown"}; theme density: ${summary.top_themes_per_100_chars || "see the charts below"}.`,
+        detail: `Years: ${stage.years}; average age: ${summary.avg_age || "unknown"}; theme density: ${topThemes}.`,
         stageId: stage.id
       };
     });

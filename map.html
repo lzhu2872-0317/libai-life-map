@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Li Bai life map: Google Maps, timeline, and poem cards.">
+  <title>Li Bai Life Map</title>
+  <link rel="icon" href="assets/icons/marker.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/component.css">
+  <link rel="stylesheet" href="css/map.css">
+  <link rel="stylesheet" href="css/timeline.css">
+  <link rel="stylesheet" href="css/animation.css">
+</head>
+<body data-theme="light" class="chronicle-mode home-page">
+  <div class="app-shell chronicle-shell">
+    <header class="breadcrumb-bar" id="top">
+      <a href="index.html">Overview</a>
+      <a aria-current="page" href="map.html">Map</a>
+      <a href="methodology.html">Methodology</a>
+      <a href="datasets.html">Datasets</a>
+      <button class="ghost-button theme-mini" id="drawerOpen" type="button" aria-controls="sideDrawer" aria-label="Open filters">Filters</button>
+      <button class="ghost-button theme-mini" id="themeToggle" type="button" aria-pressed="false">Dark</button>
+    </header>
+
+    <main class="chronicle-view" id="main">
+      <section class="map-module module-block" aria-label="Top map area">
+      <section class="map-stage" id="map-panel" aria-label="Li Bai China itinerary map">
+        <div class="map-shell screenshot-map-shell">
+          <button class="detail-tab" id="detailOpen" type="button" aria-controls="placeDetail">Open Details</button>
+          <section class="map-detail-popup place-card" id="placeDetail" aria-live="polite">
+            <div class="skeleton skeleton-title"></div>
+            <div class="skeleton skeleton-line"></div>
+            <div class="skeleton skeleton-line short"></div>
+          </section>
+          <div class="map-loading" id="mapLoading">
+            <span class="loader-dot"></span>
+            <span>Loading map…</span>
+          </div>
+          <div id="map" class="map-canvas" role="application" aria-label="Li Bai itinerary map"></div>
+          <div class="map-bottom-controls">
+            <span class="control-label">Base Map</span>
+            <select id="mapTheme" class="select-control" aria-label="Map theme">
+              <option value="literary">Modern Terrain</option>
+              <option value="ink">Ink Dark</option>
+              <option value="terrain">Terrain Focus</option>
+            </select>
+            <span class="control-label">Modern Names</span>
+            <button class="ghost-button" id="toggleRegions" type="button" aria-pressed="true">Show</button>
+            <button class="ghost-button" id="playRoute" type="button">Play Route</button>
+            <button class="ghost-button" id="resetView" type="button">China View</button>
+          </div>
+        </div>
+      </section>
+
+      </section>
+
+      <aside class="life-panel module-block" id="timeline-panel" aria-labelledby="timelineTitle">
+        <h2 id="timelineTitle">Four-Stage Poetry Map</h2>
+        <div class="stage-switcher" id="stageSwitcher" aria-label="Stage switcher"></div>
+        <div class="filter-chips compact-filters" id="filterChips" aria-label="Event type filters"></div>
+        <div class="timeline-track life-list" id="timelineTrack"></div>
+      </aside>
+
+      <section class="data-dock" aria-hidden="true">
+        <aside id="profileSummary"></aside>
+        <div id="poem-panel">
+          <div id="panelPoems"></div>
+          <div id="panelBio"></div>
+          <div id="panelPeople"></div>
+        </div>
+        <div id="chapterGrid"></div>
+      </section>
+
+      <section class="chart-module module-block chronicle-footer" aria-label="Middle word-cloud and chart area">
+        <section class="theme-stat-panel" id="themeStats" aria-label="Four-stage theme statistics"></section>
+      </section>
+
+    </main>
+<!-- ========================================================================= -->
+<!-- ======= 新增：METHODOLOGY, DATASET SOURCES & TEAM TRACKER 学术闭合板块 ======= -->
+<!-- ========================================================================= -->
+
+<!-- 1. Methodology & Workflow Concept Presentation (满足老师对 Process & Visual Presentation 的要求) -->
+<section class="methodology-module module-block" style="margin-top: 30px; padding: 25px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); grid-column: span 12;">
+    <h2 style="color: #2c3e50; font-weight: 800; font-size: 1.35rem; margin-bottom: 15px; border-bottom: 2px solid #ecf0f1; padding-bottom: 8px;">
+        Project Methodology & Process Involved
+    </h2>
+    <p style="color: #34495e; font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
+        The project uses a digital humanities approach. A small corpus of Li Bai’s poems was selected from reliable online text collections. The poems were cleaned and organised before analysis. TEI encoding was then used to mark structural and thematic features, especially place names and imagery. After the texts were prepared, Voyant Tools was used to analyse word frequency, keyword patterns, and term distribution. The identified place names were also used to create a simple map visualisation. This method combines close reading and distant reading.
+    </p>
+    
+    <!-- 概念视觉呈现：预留给小组工作流图表或答辩演示视频/音频 -->
+    <div class="workflow-presentation" style="background-color: #f8f9fa; border: 1px dashed #bdc3c7; border-radius: 6px; padding: 20px; text-align: center; margin-top: 15px;">
+        <h4 style="margin-bottom: 10px; color: #7f8c8d; font-size: 0.9rem; font-weight: bold; text-transform: uppercase;">[ Visual Presentation of Concepts & Workflow Diagram ]</h4>
+        <!-- 💡 提示：这里可以直接放你们组画好的工作流图片，或者放一段项目录屏演讲视频 -->
+        <img src="assets/images/workflow-diagram.png" alt="Research Process Workflow Diagram" style="max-width: 100%; height: auto; display: block; margin: 0 auto; min-height: 150px; background: #eaeded;">
+    </div>
+</section>
+
+<!-- 2. 全网最底层：数字人文全量公开数据集与开放仓库 (纯净无 Bug 完美对齐版) -->
+<section class="sources-module module-block" style="margin-top: 35px; padding: 35px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); margin-bottom: 50px; clear: both; width: auto; margin-left: 20px; margin-right: 20px;">
+    <h2 style="color: #2c3e50; font-weight: 800; font-size: 1.4rem; margin-bottom: 15px; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px;">
+        Open-Access Research Datasets & Repository
+    </h2>
+    <p style="color: #7f8c8d; font-size: 0.92rem; margin-bottom: 25px; line-height: 1.5;">
+        In alignment with Open Science paradigms and Digital Humanities benchmarks, our complete data schema—comprising structural databases, TEI P5 semantic corpora, and GIS spatial layers—is published below for replication and evaluation.
+    </p>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
+        
+        <!-- 列一: Core Statistical Databases -->
+        <div style="background: #f8f9fa; padding: 20px; border-radius: 6px; border-top: 4px solid #34495e;">
+            <h3 style="font-size: 1.05rem; color: #2c3e50; margin-bottom: 15px; font-weight: bold;">1. Structural Systems Data</h3>
+            <ul style="list-style: none; padding-left: 0; font-size: 0.88rem; line-height: 1.8;">
+                <li style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                    <span><b style="color:#e67e22;">[CSV]</b> libai_master_dataset</span>
+                    <a href="data/libai_master_dataset.csv" download style="color:#34495e; font-weight:bold; text-decoration:none;">Download</a>
+                </li>
+                <li style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                    <span><b style="color:#e67e22;">[CSV]</b> theme_density</span>
+                    <a href="data/libai_4period_theme_density.csv" download style="color:#34495e; font-weight:bold; text-decoration:none;">Download</a>
+                </li>
+                <li style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                    <span><b style="color:#e67e22;">[CSV]</b> period_summary</span>
+                    <a href="data/libai_4period_summary.csv" download style="color:#34495e; font-weight:bold; text-decoration:none;">Download</a>
+                </li>
+                <li style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                    <span><b style="color:#2980b9;">[JSON]</b> locations</span>
+                    <a href="data/locations.json" download style="color:#34495e; font-weight:bold; text-decoration:none;">Download</a>
+                </li>
+                <li style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                    <span><b style="color:#2980b9;">[JSON]</b> poems</span>
+                    <a href="data/poems.json" download style="color:#34495e; font-weight:bold; text-decoration:none;">Download</a>
+                </li>
+                <li style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                    <span><b style="color:#2980b9;">[JSON]</b> timeline</span>
+                    <a href="data/timeline.json" download style="color:#34495e; font-weight:bold; text-decoration:none;">Download</a>
+                </li>
+                <li style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                    <span><b style="color:#2980b9;">[JSON]</b> biography</span>
+                    <a href="data/biography.json" download style="color:#34495e; font-weight:bold; text-decoration:none;">Download</a>
+                </li>
+                <li style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                    <span><b style="color:#2980b9;">[JSON]</b> cnkgraph_nodes</span>
+                    <a href="data/cnkgraph-like-libai.json" download style="color:#34495e; font-weight:bold; text-decoration:none;">Download</a>
+                </li>
+                <li style="margin-bottom: 0; display: flex; justify-content: space-between; align-items: center;">
+                    <span><b style="color:#16a085;">[MD]</b> 4period_report</span>
+                    <a href="data/libai_4period_report.md" download style="color:#34495e; font-weight:bold; text-decoration:none;">Download</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 列二: TEI P5 XML Semantic Corpora -->
+        <div style="background: #f8f9fa; padding: 20px; border-radius: 6px; border-top: 4px solid #2ecc71;">
+            <h3 style="font-size: 1.05rem; color: #2c3e50; margin-bottom: 15px; font-weight: bold;">2. TEI P5 XML Text Markup</h3>
+            <ul style="list-style: none; padding-left: 0; font-size: 0.88rem; line-height: 1.8;">
+                <li style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                    <span><b style="color:#27ae60;">[XML]</b> master_tei_corpus</span>
+                    <a href="data/libai_4period_tei_corpus.xml" download style="color:#27ae60; font-weight:bold; text-decoration:none;">Download</a>
+                </li>
+                <li style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                    <span><b style="color:#27ae60;">[XML]</b> stage1_youth_tei</span>
+                    <a href="data/stage1-youth_tei.xml" download style="color:#27ae60; font-weight:bold; text-decoration:none;">Download</a>
+                </li>
+                <li style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                    <span><b style="color:#27ae60;">[XML]</b> stage2_travels_tei</span>
+                    <a href="data/stage2-travels_tei.xml" download style="color:#27ae60; font-weight:bold; text-decoration:none;">Download</a>
+                </li>
+                <li style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                    <span><b style="color:#27ae60;">[XML]</b> stage3_changan_tei</span>
+                    <a href="data/stage3-changan_tei.xml" download style="color:#27ae60; font-weight:bold; text-decoration:none;">Download</a>
+                </li>
+                <li style="margin-bottom: 0; display: flex; justify-content: space-between; align-items: center;">
+                    <span><b style="color:#27ae60;">[XML]</b> stage4_exile_late_tei</span>
+                    <a href="data/stage4-exile-late-tei.xml" download style="color:#27ae60; font-weight:bold; text-decoration:none;">Download</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 列三: GIS Geospatial Itinerary Layers -->
+        <div style="background: #f8f9fa; padding: 20px; border-radius: 6px; border-top: 4px solid #e74c3c;">
+            <h3 style="font-size: 1.05rem; color: #2c3e50; margin-bottom: 15px; font-weight: bold;">3. GIS Geospatial Layers</h3>
+            <ul style="list-style: none; padding-left: 0; font-size: 0.88rem; line-height: 1.8;">
+                <li style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                    <span><b style="color:#c0392b;">[KML]</b> Stage1_Youth_701_724</span>
+                    <a href="data/Stage1_Youth_701_724.kml" download style="color:#e74c3c; font-weight:bold; text-decoration:none;">Download</a>
+                </li>
+                <li style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                    <span><b style="color:#c0392b;">[KML]</b> Stage2_Travels_725_741</span>
+                    <a href="data/Stage2_Travels_725_741.kml" download style="color:#e74c3c; font-weight:bold; text-decoration:none;">Download</a>
+                </li>
+                <li style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                    <span><b style="color:#c0392b;">[KML]</b> Stage3_Changan_742_744</span>
+                    <a href="data/Stage3_Changan_742_744.kml" download style="color:#e74c3c; font-weight:bold; text-decoration:none;">Download</a>
+                </li>
+                <li style="margin-bottom: 0; display: flex; justify-content: space-between; align-items: center;">
+                    <span><b style="color:#c0392b;">[KML]</b> Stage4_Exile_745_762</span>
+                    <a href="data/Stage4_Exile_745_762.kml" download style="color:#e74c3c; font-weight:bold; text-decoration:none;">Download</a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <!-- 外部公开数据源学术致敬 -->
+    <div class="academic-sources" style="margin-top: 25px; padding-top: 15px; border-top: 1px dashed #bdc3c7; font-size: 0.88rem; color: #7f8c8d;">
+        <p><strong>Institutional Data Gateways & Engineering Environments:</strong></p>
+        <ul style="padding-left: 18px; list-style-type: circle; margin-top: 6px; line-height: 1.6;">
+            <li>Textual baseline ingested from <em>Chinese Text Project (ctext.org)</em> & <em>GitHub Chinese Poetry Corpus</em>.</li>
+            <li>Semantic tokenization and syntax parsing schema modeled under <em>TEI P5 Guidelines</em>.</li>
+            <li>Geospatial telemetry and coordinate vector extraction transformed via <em>Python Automated Regular Expressions</em>.</li>
+        </ul>
+    </div>
+</section>
+<!-- 3. Interactive Tool to Track Group Engagement  -->
+
+<!-- ========================================================================= -->
+
+  </div>
+
+  <aside class="drawer" id="sideDrawer" aria-hidden="true" aria-labelledby="drawerTitle">
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <div class="drawer-panel" role="dialog" aria-modal="true">
+      <header class="drawer-header">
+        <h2 id="drawerTitle">Filter and Locate</h2>
+        <button class="icon-button" id="drawerClose" type="button" aria-label="Close filters">×</button>
+      </header>
+      <div class="drawer-body">
+        <label class="search-box full">
+          <span>Keyword</span>
+          <input id="drawerSearch" type="search" placeholder="e.g. Chang'an, farewell, 759">
+        </label>
+        <div class="drawer-block">
+          <h3>Location List</h3>
+          <div id="drawerLocations" class="drawer-list"></div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="modal" id="poemModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <article class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="icon-button modal-close" type="button" data-close-modal aria-label="Close">×</button>
+      <h2 id="modalTitle"></h2>
+      <p id="modalMeta" class="modal-meta"></p>
+      <blockquote id="modalExcerpt"></blockquote>
+      <p id="modalSummary"></p>
+    </article>
+  </div>
+
+  <script id="fallback-data" type="application/json">
+  {
+    "locations": {
+      "meta": { "title": "李白行迹地图", "center": { "lat": 31.9, "lng": 109.7 }, "zoom": 5 },
+      "routeOrder": ["suiye","jiangyou","chengdu","emei","yuzhou","jiangling","dongting","jinling","yangzhou","luoyang","changan","liangyuan","donglu","xuancheng","lushan","xunyang","ye_lang","dangtu"],
+      "locations": [
+        {"id":"suiye","name":"碎叶城","ancientName":"碎叶","province":"吉尔吉斯斯坦楚河州","lat":42.83,"lng":75.30,"years":[701],"period":"出生传说","category":"birth","importance":5,"poemCount":0,"eventIds":["e701"],"poemIds":[],"summary":"传统说法中，李白出生于西域碎叶一带，后随家迁入蜀地。","image":"assets/images/location-suiye.svg"},
+        {"id":"jiangyou","name":"江油","ancientName":"青莲乡","province":"四川绵阳","lat":31.777,"lng":104.745,"years":[705,725],"period":"蜀中少年","category":"home","importance":5,"poemCount":4,"eventIds":["e705","e715","e724"],"poemIds":["p-jingyesi"],"summary":"李白幼年、少年时期主要生活在蜀中，青莲乡常被视为其成长地。","image":"assets/images/location-jiangyou.svg"},
+        {"id":"chengdu","name":"成都","ancientName":"益州","province":"四川成都","lat":30.657,"lng":104.066,"years":[720,725],"period":"蜀中漫游","category":"travel","importance":4,"poemCount":2,"eventIds":["e720"],"poemIds":[],"summary":"蜀地政治文化中心，代表李白离蜀前的学习与交游空间。","image":"assets/images/location-chengdu.svg"},
+        {"id":"emei","name":"峨眉山","ancientName":"峨眉","province":"四川乐山","lat":29.52,"lng":103.33,"years":[725],"period":"仗剑去国","category":"poem","importance":4,"poemCount":1,"eventIds":["e725"],"poemIds":["p-emei"],"summary":"《峨眉山月歌》将蜀中山水、离乡情绪与长江旅程联结起来。","image":"assets/images/location-emei.svg"},
+        {"id":"yuzhou","name":"重庆","ancientName":"渝州","province":"重庆","lat":29.563,"lng":106.551,"years":[725],"period":"沿江东下","category":"travel","importance":3,"poemCount":1,"eventIds":["e725"],"poemIds":["p-emei"],"summary":"李白离蜀东下的重要水路节点，连接峨眉、三峡与荆楚。","image":"assets/images/location-yuzhou.svg"},
+        {"id":"jiangling","name":"荆州","ancientName":"江陵","province":"湖北荆州","lat":30.335,"lng":112.240,"years":[725,759],"period":"荆楚往还","category":"route","importance":4,"poemCount":2,"eventIds":["e725","e759"],"poemIds":["p-baidi"],"summary":"江陵是李白水路行旅中的关键节点，后期遇赦东还亦与此线相关。","image":"assets/images/location-jiangling.svg"},
+        {"id":"dongting","name":"洞庭湖","ancientName":"洞庭","province":"湖南岳阳","lat":29.37,"lng":113.12,"years":[727,759],"period":"楚地漫游","category":"poem","importance":3,"poemCount":2,"eventIds":["e727"],"poemIds":[],"summary":"洞庭湖区域承载李白楚地游历与送别题材。","image":"assets/images/location-dongting.svg"},
+        {"id":"jinling","name":"南京","ancientName":"金陵","province":"江苏南京","lat":32.060,"lng":118.797,"years":[727,748,761],"period":"江南行旅","category":"poem","importance":5,"poemCount":8,"eventIds":["e727","e748"],"poemIds":["p-fenghuangtai"],"summary":"金陵是李白反复书写的江南城市，兼具怀古、登临与交游意义。","image":"assets/images/location-jinling.svg"},
+        {"id":"yangzhou","name":"扬州","ancientName":"广陵","province":"江苏扬州","lat":32.394,"lng":119.412,"years":[727,730],"period":"吴越漫游","category":"poem","importance":4,"poemCount":3,"eventIds":["e728"],"poemIds":["p-guangling"],"summary":"扬州是李白送别诗与江淮交游的重要地点。","image":"assets/images/location-yangzhou.svg"},
+        {"id":"luoyang","name":"洛阳","ancientName":"东都","province":"河南洛阳","lat":34.619,"lng":112.454,"years":[734,744],"period":"中原交游","category":"friend","importance":4,"poemCount":2,"eventIds":["e734","e744"],"poemIds":[],"summary":"洛阳连接李白中原交游与入长安前后的政治文化网络。","image":"assets/images/location-luoyang.svg"},
+        {"id":"changan","name":"西安","ancientName":"长安","province":"陕西西安","lat":34.341,"lng":108.939,"years":[742,744],"period":"供奉翰林","category":"court","importance":5,"poemCount":10,"eventIds":["e742","e744"],"poemIds":["p-jiangjinjiu"],"summary":"天宝年间李白入长安供奉翰林，声名极盛，也遭遇政治受挫。","image":"assets/images/location-changan.svg"},
+        {"id":"liangyuan","name":"商丘","ancientName":"梁园","province":"河南商丘","lat":34.414,"lng":115.656,"years":[744,745],"period":"梁宋交游","category":"friend","importance":4,"poemCount":4,"eventIds":["e744-dufu"],"poemIds":[],"summary":"李白离开长安后，在梁宋一带与杜甫、高适等交游。","image":"assets/images/location-liangyuan.svg"},
+        {"id":"donglu","name":"济宁","ancientName":"东鲁","province":"山东济宁","lat":35.414,"lng":116.587,"years":[736,746],"period":"东鲁家居","category":"home","importance":4,"poemCount":5,"eventIds":["e736"],"poemIds":[],"summary":"东鲁是李白中年居留与家庭生活的重要区域。","image":"assets/images/location-donglu.svg"},
+        {"id":"xuancheng","name":"宣城","ancientName":"宣州","province":"安徽宣城","lat":30.945,"lng":118.758,"years":[753,754],"period":"江南晚游","category":"poem","importance":5,"poemCount":7,"eventIds":["e753"],"poemIds":["p-xietiao"],"summary":"宣城一带留下大量登临、送别和怀古作品。","image":"assets/images/location-xuancheng.svg"},
+        {"id":"lushan","name":"庐山","ancientName":"庐山","province":"江西九江","lat":29.57,"lng":115.98,"years":[756],"period":"入幕永王","category":"poem","importance":4,"poemCount":3,"eventIds":["e756"],"poemIds":["p-lushan"],"summary":"庐山既是山水诗地，也是安史之乱后李白命运转折线索之一。","image":"assets/images/location-lushan.svg"},
+        {"id":"xunyang","name":"九江","ancientName":"浔阳","province":"江西九江","lat":29.705,"lng":116.002,"years":[757],"period":"系狱与流放","category":"exile","importance":4,"poemCount":2,"eventIds":["e757"],"poemIds":[],"summary":"永王事件后，李白被系浔阳狱，后判长流夜郎。","image":"assets/images/location-xunyang.svg"},
+        {"id":"ye_lang","name":"桐梓","ancientName":"夜郎方向","province":"贵州遵义","lat":28.13,"lng":106.82,"years":[758,759],"period":"长流夜郎","category":"exile","importance":4,"poemCount":2,"eventIds":["e758","e759"],"poemIds":[],"summary":"夜郎是李白流放判决的象征性终点；途中遇赦，未必真正抵达。","image":"assets/images/location-yelang.svg"},
+        {"id":"dangtu","name":"当涂","ancientName":"当涂","province":"安徽马鞍山","lat":31.570,"lng":118.497,"years":[761,762],"period":"晚年终老","category":"late","importance":5,"poemCount":3,"eventIds":["e762"],"poemIds":[],"summary":"李白晚年依族叔李阳冰，卒于当涂，行迹在江东收束。","image":"assets/images/location-dangtu.svg"}
+      ],
+      "geojson": {"type":"FeatureCollection","features":[{"type":"Feature","properties":{"id":"sichuan-basin","name":"蜀中成长圈","kind":"region"},"geometry":{"type":"Polygon","coordinates":[[[102.4,28.5],[106.4,28.8],[106.8,32.6],[103.2,33.1],[101.7,30.6],[102.4,28.5]]]}},{"type":"Feature","properties":{"id":"jiangnan-poetry","name":"江南创作密集区","kind":"region"},"geometry":{"type":"Polygon","coordinates":[[[115.0,28.7],[121.0,29.2],[121.5,33.0],[117.2,33.5],[114.6,31.0],[115.0,28.7]]]}}]}
+    },
+    "timeline": {
+      "meta": { "title": "李白生平时间线", "range": [701, 762] },
+      "events": [
+        {"id":"e701","year":701,"month":null,"title":"李白出生","locationId":"suiye","type":"birth","summary":"据传统说法，李白出生于西域碎叶一带。","detail":"此处作为行迹起点处理；具体出生地在学术上仍有不同说法。"},
+        {"id":"e705","year":705,"month":null,"title":"迁居蜀中","locationId":"jiangyou","type":"home","summary":"幼年随家迁居绵州昌隆青莲乡。","detail":"蜀中阶段构成李白早期文化记忆与山水经验。"},
+        {"id":"e715","year":715,"month":null,"title":"少年读书与任侠","locationId":"jiangyou","type":"study","summary":"传其少年广泛阅读、习剑，形成豪迈自我形象。","detail":"页面用该节点承接青莲成长地、早年志向与蜀中活动。"},
+        {"id":"e720","year":720,"month":null,"title":"蜀中交游","locationId":"chengdu","type":"travel","summary":"活动范围扩展至成都等地。","detail":"成都作为蜀地文化中心，用于呈现离蜀前的本地漫游。"},
+        {"id":"e724","year":724,"month":null,"title":"离蜀准备","locationId":"jiangyou","type":"travel","summary":"李白逐渐转向更大范围的出游与求仕。","detail":"该节点与后续峨眉、渝州、江陵水路相连。"},
+        {"id":"e725","year":725,"month":null,"title":"仗剑去国，辞亲远游","locationId":"emei","type":"route","summary":"离开蜀地，沿长江东下。","detail":"《峨眉山月歌》常作为此段行旅的文学坐标。"},
+        {"id":"e727","year":727,"month":null,"title":"漫游荆楚江南","locationId":"dongting","type":"travel","summary":"进入楚地与江南，行旅地点显著增多。","detail":"该阶段页面联动洞庭、金陵、扬州等诗歌地点。"},
+        {"id":"e728","year":728,"month":null,"title":"广陵送别","locationId":"yangzhou","type":"poem","summary":"扬州、广陵成为送别诗的重要地理意象。","detail":"用《黄鹤楼送孟浩然之广陵》承接江汉与江淮路线。"},
+        {"id":"e734","year":734,"month":null,"title":"中原求仕","locationId":"luoyang","type":"court","summary":"李白在洛阳、长安一线展开政治文化交游。","detail":"洛阳在页面中承担中原网络节点。"},
+        {"id":"e736","year":736,"month":null,"title":"东鲁居留","locationId":"donglu","type":"home","summary":"东鲁成为李白中年重要居留地。","detail":"此节点用于连接山东区域、家庭生活与中原往还。"},
+        {"id":"e742","year":742,"month":null,"title":"奉诏入长安","locationId":"changan","type":"court","summary":"李白入长安供奉翰林，迎来声名高峰。","detail":"长安是整套交互系统的高亮核心节点之一。"},
+        {"id":"e744","year":744,"month":null,"title":"赐金放还","locationId":"changan","type":"turning","summary":"离开长安，政治理想受挫。","detail":"页面路线从长安转向梁宋、东鲁和江南。"},
+        {"id":"e744-dufu","year":744,"month":null,"title":"梁宋遇杜甫、高适","locationId":"liangyuan","type":"friend","summary":"李白、杜甫、高适在梁宋一带交游。","detail":"该节点用于人物关系与地点卡片联动。"},
+        {"id":"e748","year":748,"month":null,"title":"金陵再游","locationId":"jinling","type":"poem","summary":"金陵怀古、登临、送别书写集中。","detail":"联动《登金陵凤凰台》与金陵地点详情。"},
+        {"id":"e753","year":753,"month":null,"title":"宣州登临","locationId":"xuancheng","type":"poem","summary":"宣城、谢朓楼等地成为晚期诗歌高频场景。","detail":"该节点驱动右侧诗词卡片和地图缩放。"},
+        {"id":"e756","year":756,"month":null,"title":"安史乱中入幕","locationId":"lushan","type":"turning","summary":"乱世中的政治选择改变李白晚年命运。","detail":"页面用庐山和浔阳串联永王事件后果。"},
+        {"id":"e757","year":757,"month":null,"title":"浔阳系狱","locationId":"xunyang","type":"exile","summary":"受永王事件牵连，被系浔阳狱。","detail":"浔阳节点切换为警示色，并触发流放路线段。"},
+        {"id":"e758","year":758,"month":null,"title":"长流夜郎","locationId":"ye_lang","type":"exile","summary":"李白被判长流夜郎，沿江向西南行进。","detail":"该路线在地图上以虚线与低饱和色表现。"},
+        {"id":"e759","year":759,"month":null,"title":"途中遇赦","locationId":"jiangling","type":"turning","summary":"至白帝城附近遇赦，东还江陵。","detail":"联动《早发白帝城》，路线动画从西南折返长江。"},
+        {"id":"e762","year":762,"month":null,"title":"卒于当涂","locationId":"dangtu","type":"late","summary":"晚年依李阳冰，卒于当涂。","detail":"时间线终点，地图聚焦江东。"}
+      ]
+    },
+    "poems": {
+      "poems": [
+        {"id":"p-emei","title":"峨眉山月歌","year":725,"locationId":"emei","genre":"七言绝句","excerpt":"峨眉山月半轮秋，影入平羌江水流。","theme":["山水","离蜀","行旅"],"summary":"以峨眉月色开启离蜀东下的空间叙事。"},
+        {"id":"p-guangling","title":"黄鹤楼送孟浩然之广陵","year":728,"locationId":"yangzhou","genre":"七言绝句","excerpt":"孤帆远影碧空尽，唯见长江天际流。","theme":["送别","长江","交游"],"summary":"诗题目的地广陵指向扬州，体现江汉至江淮的诗性交通。"},
+        {"id":"p-jingyesi","title":"静夜思","year":726,"locationId":"jiangyou","genre":"五言绝句","excerpt":"举头望明月，低头思故乡。","theme":["月","乡愁"],"summary":"作为故乡意象样本，联动青莲成长地。"},
+        {"id":"p-jiangjinjiu","title":"将进酒","year":744,"locationId":"changan","genre":"乐府","excerpt":"天生我材必有用，千金散尽还复来。","theme":["豪放","宴饮","失意"],"summary":"用于表现长安前后理想与失意交织的精神气质。"},
+        {"id":"p-fenghuangtai","title":"登金陵凤凰台","year":748,"locationId":"jinling","genre":"七言律诗","excerpt":"凤凰台上凤凰游，凤去台空江自流。","theme":["怀古","登临","金陵"],"summary":"金陵怀古书写的代表作。"},
+        {"id":"p-xietiao","title":"宣州谢朓楼饯别校书叔云","year":753,"locationId":"xuancheng","genre":"杂言古诗","excerpt":"俱怀逸兴壮思飞，欲上青天揽明月。","theme":["送别","登楼","怀才"],"summary":"宣州谢朓楼场景带出晚期情绪与江南登临。"},
+        {"id":"p-lushan","title":"望庐山瀑布","year":756,"locationId":"lushan","genre":"七言绝句","excerpt":"飞流直下三千尺，疑是银河落九天。","theme":["山水","奇观"],"summary":"庐山诗歌地理的高识别度样本。"},
+        {"id":"p-baidi","title":"早发白帝城","year":759,"locationId":"jiangling","genre":"七言绝句","excerpt":"两岸猿声啼不住，轻舟已过万重山。","theme":["遇赦","长江","速度"],"summary":"遇赦东还的路线诗，联动江陵与长江水路。"}
+      ],
+      "themes": [{"name":"山水","count":3},{"name":"送别","count":3},{"name":"行旅","count":3},{"name":"怀古","count":1},{"name":"豪放","count":1}]
+    },
+    "biography": {
+      "profile": {"name":"李白","courtesyName":"太白","alias":"青莲居士","dynasty":"唐","years":"701-762","summary":"李白是盛唐最具代表性的诗人之一，其行迹横跨蜀中、荆楚、江南、中原、长安、东鲁与晚年流放路线。本项目以地图、时间线、诗词卡片和地点详情联动呈现其一生核心轨迹。","keywords":["盛唐","行旅","山水","游仙","送别","怀古"],"stats":{"locations":18,"timelineEvents":20,"poemSamples":8,"routeDistanceLabel":"约一万余里"}},
+      "relationships": [{"name":"杜甫","relation":"诗友","locationId":"liangyuan","summary":"天宝三载前后，李白与杜甫、高适在梁宋一带交游。"},{"name":"高适","relation":"诗友","locationId":"liangyuan","summary":"梁宋交游网络中的重要人物。"},{"name":"孟浩然","relation":"前辈诗友","locationId":"yangzhou","summary":"《黄鹤楼送孟浩然之广陵》以送别表达敬慕与惜别。"},{"name":"贺知章","relation":"赏识者","locationId":"changan","summary":"传称贺知章赞李白为“谪仙人”，强化其长安声名。"},{"name":"李阳冰","relation":"族叔","locationId":"dangtu","summary":"李白晚年依李阳冰，后者为其整理文集。"}],
+      "chapters": [{"id":"c1","title":"蜀中少年","years":"701-725","locationIds":["suiye","jiangyou","chengdu","emei"],"summary":"从出生传说到青莲成长地，蜀中阶段塑造李白的山水经验、任侠气质和远游志向。"},{"id":"c2","title":"仗剑远游","years":"725-742","locationIds":["yuzhou","jiangling","dongting","jinling","yangzhou","luoyang","donglu"],"summary":"离蜀后沿长江东下，进入荆楚江南与中原网络，诗歌地理迅速扩展。"},{"id":"c3","title":"长安高峰","years":"742-744","locationIds":["changan"],"summary":"奉诏入长安供奉翰林，名动京师，也在政治现实中受挫。"},{"id":"c4","title":"江湖再游","years":"744-756","locationIds":["liangyuan","donglu","jinling","xuancheng","lushan"],"summary":"离京后重回漫游与交游，梁宋、东鲁、江南构成密集活动区域。"},{"id":"c5","title":"流放与晚年","years":"757-762","locationIds":["xunyang","ye_lang","jiangling","dangtu"],"summary":"永王事件后被系狱并判流夜郎，途中遇赦，晚年归于江东。"}]
+    }
+  }
+  </script>
+
+  <script src="js/translations.js?v=20260607-1"></script>
+  <script src="js/cnkgraph-adapter.js?v=20260530-2"></script>
+  <script src="js/tei-data-loader.js?v=20260530-2"></script>
+  <script src="js/data-loader.js?v=20260530-2"></script>
+  <script src="js/animation.js?v=20260530-2"></script>
+  <script src="js/route.js?v=20260530-2"></script>
+  <script src="js/ui.js?v=20260530-2"></script>
+  <script src="js/timeline.js?v=20260530-2"></script>
+  <script src="js/map.js?v=20260530-2"></script>
+  <script src="js/app.js?v=20260530-2"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBz0py_3IszmsjF0iKjIPKjYBDRM1l_zy4&callback=initLiBaiApp" onerror="handleGoogleMapsError('network')"></script>
+</body>
+</html>

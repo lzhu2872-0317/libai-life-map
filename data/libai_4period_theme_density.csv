@@ -1,33 +1,33 @@
 stage,chinese_stage,poems,theme,raw_count,per_100_chars
-"Stage 1: Youth, 701-724",第一时期：蜀中少年期,13,山水自然,62,10.065
-"Stage 1: Youth, 701-724",第一时期：蜀中少年期,13,行旅空间,26,4.221
-"Stage 1: Youth, 701-724",第一时期：蜀中少年期,13,离别酬赠,3,0.487
-"Stage 1: Youth, 701-724",第一时期：蜀中少年期,13,酒宴歌舞,1,0.162
-"Stage 1: Youth, 701-724",第一时期：蜀中少年期,13,仕宦功名,5,0.812
-"Stage 1: Youth, 701-724",第一时期：蜀中少年期,13,仙道超越,4,0.649
-"Stage 1: Youth, 701-724",第一时期：蜀中少年期,13,边塞战争,4,0.649
-"Stage 1: Youth, 701-724",第一时期：蜀中少年期,13,愁苦漂泊,9,1.461
-"Stage 2: Travels, 725-741",第二时期：出蜀与漫游期,132,山水自然,687,7.514
-"Stage 2: Travels, 725-741",第二时期：出蜀与漫游期,132,行旅空间,298,3.259
-"Stage 2: Travels, 725-741",第二时期：出蜀与漫游期,132,离别酬赠,104,1.137
-"Stage 2: Travels, 725-741",第二时期：出蜀与漫游期,132,酒宴歌舞,138,1.509
-"Stage 2: Travels, 725-741",第二时期：出蜀与漫游期,132,仕宦功名,173,1.892
-"Stage 2: Travels, 725-741",第二时期：出蜀与漫游期,132,仙道超越,85,0.93
-"Stage 2: Travels, 725-741",第二时期：出蜀与漫游期,132,边塞战争,65,0.711
-"Stage 2: Travels, 725-741",第二时期：出蜀与漫游期,132,愁苦漂泊,121,1.323
-"Stage 3: Chang'an, 742-744",第三时期：长安时期,56,山水自然,293,6.812
-"Stage 3: Chang'an, 742-744",第三时期：长安时期,56,行旅空间,128,2.976
-"Stage 3: Chang'an, 742-744",第三时期：长安时期,56,离别酬赠,30,0.698
-"Stage 3: Chang'an, 742-744",第三时期：长安时期,56,酒宴歌舞,47,1.093
-"Stage 3: Chang'an, 742-744",第三时期：长安时期,56,仕宦功名,105,2.441
-"Stage 3: Chang'an, 742-744",第三时期：长安时期,56,仙道超越,63,1.465
-"Stage 3: Chang'an, 742-744",第三时期：长安时期,56,边塞战争,73,1.697
-"Stage 3: Chang'an, 742-744",第三时期：长安时期,56,愁苦漂泊,29,0.674
-"Stage 4: Exile and Late Travels, 745-762",第四时期：放还、乱离与晚年期,257,山水自然,1660,7.029
-"Stage 4: Exile and Late Travels, 745-762",第四时期：放还、乱离与晚年期,257,行旅空间,762,3.227
-"Stage 4: Exile and Late Travels, 745-762",第四时期：放还、乱离与晚年期,257,离别酬赠,248,1.05
-"Stage 4: Exile and Late Travels, 745-762",第四时期：放还、乱离与晚年期,257,酒宴歌舞,338,1.431
-"Stage 4: Exile and Late Travels, 745-762",第四时期：放还、乱离与晚年期,257,仕宦功名,516,2.185
-"Stage 4: Exile and Late Travels, 745-762",第四时期：放还、乱离与晚年期,257,仙道超越,210,0.889
-"Stage 4: Exile and Late Travels, 745-762",第四时期：放还、乱离与晚年期,257,边塞战争,214,0.906
-"Stage 4: Exile and Late Travels, 745-762",第四时期：放还、乱离与晚年期,257,愁苦漂泊,266,1.126
+"Stage 1: Youth, 701-724",Stage 1: Youth in Shu,13,Nature & Landscape,62,10.065
+"Stage 1: Youth, 701-724",Stage 1: Youth in Shu,13,Travel Space,26,4.221
+"Stage 1: Youth, 701-724",Stage 1: Youth in Shu,13,Farewell & Gifts,3,0.487
+"Stage 1: Youth, 701-724",Stage 1: Youth in Shu,13,Wine & Banquets,1,0.162
+"Stage 1: Youth, 701-724",Stage 1: Youth in Shu,13,Official Ambition,5,0.812
+"Stage 1: Youth, 701-724",Stage 1: Youth in Shu,13,Daoist Transcendence,4,0.649
+"Stage 1: Youth, 701-724",Stage 1: Youth in Shu,13,Frontier War,4,0.649
+"Stage 1: Youth, 701-724",Stage 1: Youth in Shu,13,Sorrow & Drifting,9,1.461
+"Stage 2: Travels, 725-741",Stage 2: Leaving Shu and Wandering,132,Nature & Landscape,687,7.514
+"Stage 2: Travels, 725-741",Stage 2: Leaving Shu and Wandering,132,Travel Space,298,3.259
+"Stage 2: Travels, 725-741",Stage 2: Leaving Shu and Wandering,132,Farewell & Gifts,104,1.137
+"Stage 2: Travels, 725-741",Stage 2: Leaving Shu and Wandering,132,Wine & Banquets,138,1.509
+"Stage 2: Travels, 725-741",Stage 2: Leaving Shu and Wandering,132,Official Ambition,173,1.892
+"Stage 2: Travels, 725-741",Stage 2: Leaving Shu and Wandering,132,Daoist Transcendence,85,0.93
+"Stage 2: Travels, 725-741",Stage 2: Leaving Shu and Wandering,132,Frontier War,65,0.711
+"Stage 2: Travels, 725-741",Stage 2: Leaving Shu and Wandering,132,Sorrow & Drifting,121,1.323
+"Stage 3: Chang'an, 742-744",Stage 3: Chang'an Period,56,Nature & Landscape,293,6.812
+"Stage 3: Chang'an, 742-744",Stage 3: Chang'an Period,56,Travel Space,128,2.976
+"Stage 3: Chang'an, 742-744",Stage 3: Chang'an Period,56,Farewell & Gifts,30,0.698
+"Stage 3: Chang'an, 742-744",Stage 3: Chang'an Period,56,Wine & Banquets,47,1.093
+"Stage 3: Chang'an, 742-744",Stage 3: Chang'an Period,56,Official Ambition,105,2.441
+"Stage 3: Chang'an, 742-744",Stage 3: Chang'an Period,56,Daoist Transcendence,63,1.465
+"Stage 3: Chang'an, 742-744",Stage 3: Chang'an Period,56,Frontier War,73,1.697
+"Stage 3: Chang'an, 742-744",Stage 3: Chang'an Period,56,Sorrow & Drifting,29,0.674
+"Stage 4: Exile and Late Travels, 745-762","Stage 4: Exile, Turmoil, and Late Years",257,Nature & Landscape,1660,7.029
+"Stage 4: Exile and Late Travels, 745-762","Stage 4: Exile, Turmoil, and Late Years",257,Travel Space,762,3.227
+"Stage 4: Exile and Late Travels, 745-762","Stage 4: Exile, Turmoil, and Late Years",257,Farewell & Gifts,248,1.05
+"Stage 4: Exile and Late Travels, 745-762","Stage 4: Exile, Turmoil, and Late Years",257,Wine & Banquets,338,1.431
+"Stage 4: Exile and Late Travels, 745-762","Stage 4: Exile, Turmoil, and Late Years",257,Official Ambition,516,2.185
+"Stage 4: Exile and Late Travels, 745-762","Stage 4: Exile, Turmoil, and Late Years",257,Daoist Transcendence,210,0.889
+"Stage 4: Exile and Late Travels, 745-762","Stage 4: Exile, Turmoil, and Late Years",257,Frontier War,214,0.906
+"Stage 4: Exile and Late Travels, 745-762","Stage 4: Exile, Turmoil, and Late Years",257,Sorrow & Drifting,266,1.126

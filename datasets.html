@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Open-access research datasets and repository for the Li Bai Life Map.">
+  <title>Research Datasets | Li Bai Life Map</title>
+  <link rel="icon" href="assets/icons/marker.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/component.css">
+</head>
+<body data-theme="light" class="standalone-page">
+  <div class="standalone-shell">
+    <header class="standalone-nav">
+      <a href="index.html">Overview</a>
+      <a href="map.html">Map</a>
+      <a href="methodology.html">Methodology</a>
+      <a aria-current="page" href="datasets.html">Datasets</a>
+    </header>
+
+    <main class="standalone-main">
+      <section class="standalone-card datasets-page">
+        <p class="eyebrow">Open Research Repository</p>
+        <h1>Open-Access Research Datasets & Repository</h1>
+        <p>
+          In alignment with Open Science paradigms and Digital Humanities benchmarks, our complete data schema, comprising structural databases, TEI P5 semantic corpora, and GIS spatial layers, is published below for replication and evaluation.
+        </p>
+
+        <div class="sources-grid">
+          <article class="dataset-column">
+            <h2>1. Structural Systems Data</h2>
+            <ul>
+              <li><span><b>[CSV]</b> libai_master_dataset</span><a href="data/libai_master_dataset.csv" download>Download</a></li>
+              <li><span><b>[CSV]</b> theme_density</span><a href="data/libai_4period_theme_density.csv" download>Download</a></li>
+              <li><span><b>[CSV]</b> period_summary</span><a href="data/libai_4period_summary.csv" download>Download</a></li>
+              <li><span><b>[JSON]</b> locations</span><a href="data/locations.json" download>Download</a></li>
+              <li><span><b>[JSON]</b> poems</span><a href="data/poems.json" download>Download</a></li>
+              <li><span><b>[JSON]</b> timeline</span><a href="data/timeline.json" download>Download</a></li>
+              <li><span><b>[JSON]</b> biography</span><a href="data/biography.json" download>Download</a></li>
+              <li><span><b>[JSON]</b> cnkgraph_nodes</span><a href="data/cnkgraph-like-libai.json" download>Download</a></li>
+              <li><span><b>[MD]</b> 4period_report</span><a href="data/libai_4period_report.md" download>Download</a></li>
+            </ul>
+          </article>
+
+          <article class="dataset-column tei-column">
+            <h2>2. TEI P5 XML Text Markup</h2>
+            <ul>
+              <li><span><b>[XML]</b> master_tei_corpus</span><a href="data/libai_4period_tei_corpus.xml" download>Download</a></li>
+              <li><span><b>[XML]</b> stage1_youth_tei</span><a href="data/stage1-youth_tei.xml" download>Download</a></li>
+              <li><span><b>[XML]</b> stage2_travels_tei</span><a href="data/stage2-travels_tei.xml" download>Download</a></li>
+              <li><span><b>[XML]</b> stage3_changan_tei</span><a href="data/stage3-changan_tei.xml" download>Download</a></li>
+              <li><span><b>[XML]</b> stage4_exile_late_tei</span><a href="data/stage4-exile-late_tei.xml" download>Download</a></li>
+            </ul>
+          </article>
+
+          <article class="dataset-column gis-column">
+            <h2>3. GIS Geospatial Layers</h2>
+            <ul>
+              <li><span><b>[KML]</b> Stage1_Youth_701_724</span><a href="data/Stage1_Youth_701_724.kml" download>Download</a></li>
+              <li><span><b>[KML]</b> Stage2_Travels_725_741</span><a href="data/Stage2_Travels_725_741.kml" download>Download</a></li>
+              <li><span><b>[KML]</b> Stage3_Changan_742_744</span><a href="data/Stage3_Changan_742_744.kml" download>Download</a></li>
+              <li><span><b>[KML]</b> Stage4_Exile_745_762</span><a href="data/Stage4_Exile_745_762.kml" download>Download</a></li>
+            </ul>
+          </article>
+        </div>
+
+        <section class="academic-sources">
+          <h2>Institutional Data Gateways & Engineering Environments</h2>
+          <ul>
+            <li>Textual baseline ingested from <em>Chinese Text Project (ctext.org)</em> and <em>GitHub Chinese Poetry Corpus</em>.</li>
+            <li>Semantic tokenization and syntax parsing schema modeled under <em>TEI P5 Guidelines</em>.</li>
+            <li>Geospatial telemetry and coordinate vector extraction transformed via <em>Python Automated Regular Expressions</em>.</li>
+          </ul>
+        </section>
+
+        <nav class="page-actions" aria-label="Page navigation">
+          <a class="ghost-button" href="index.html">Back to Overview</a>
+          <a class="ghost-button" href="map.html">Open Map</a>
+          <a class="ghost-button" href="methodology.html">Open Methodology</a>
+        </nav>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

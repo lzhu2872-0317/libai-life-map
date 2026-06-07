@@ -12,7 +12,7 @@
   async function fetchJson(path) {
     const response = await fetch(path, { cache: "no-cache" });
     if (!response.ok) {
-      throw new Error(`加载失败：${path}`);
+      throw new Error(`Failed to load: ${path}`);
     }
     return response.json();
   }
@@ -20,15 +20,19 @@
   function readFallbackData() {
     const script = document.getElementById("fallback-data");
     if (!script) {
-      throw new Error("缺少 fallback-data");
+      throw new Error("Missing fallback-data");
     }
     return JSON.parse(script.textContent);
+  }
+
+  function localize(data) {
+    return window.LiBaiTranslations ? window.LiBaiTranslations.localizeData(data) : data;
   }
 
   async function loadAllData() {
     try {
       if (window.LiBaiTeiDataLoader) {
-        return await window.LiBaiTeiDataLoader.loadDocsData();
+        return localize(await window.LiBaiTeiDataLoader.loadDocsData());
       }
     } catch (error) {
       console.warn("TEI docs data load failed, fallback to local JSON.", error);
@@ -37,10 +41,10 @@
     try {
       const cnkgraphLike = await fetchJson(DATA_FILES.cnkgraphLike);
       if (window.LiBaiCnkgraphAdapter && cnkgraphLike?.Traces?.length) {
-        return window.LiBaiCnkgraphAdapter.adapt(cnkgraphLike);
+        return localize(window.LiBaiCnkgraphAdapter.adapt(cnkgraphLike));
       }
     } catch (error) {
-      // 同构文件不存在或加载失败时，继续走原本地 JSON 数据。
+      // Continue to the original local JSON data if the modeled file is absent or fails to load.
     }
 
     try {
@@ -50,17 +54,17 @@
         fetchJson(DATA_FILES.timeline),
         fetchJson(DATA_FILES.biography)
       ]);
-      return { locations, poems, timeline, biography, source: "json" };
+      return localize({ locations, poems, timeline, biography, source: "json" });
     } catch (error) {
       const fallback = readFallbackData();
-      return {
+      return localize({
         locations: fallback.locations,
         poems: fallback.poems,
         timeline: fallback.timeline,
         biography: fallback.biography,
         source: "inline",
         warning: error.message
-      };
+      });
     }
   }
 

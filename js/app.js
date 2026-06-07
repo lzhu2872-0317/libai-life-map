@@ -160,7 +160,7 @@
         ancientName: stage.title,
         province: "",
         years: [stage.years],
-        period: `${stage.title}（${stage.years}）`,
+        period: `${stage.title} (${stage.years})`,
         category: "stage",
         importance: 5,
         poemCount: stage.poems.length,
