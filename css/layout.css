@@ -892,7 +892,7 @@
 .trends-panel {
   min-width: 0;
   min-height: 0;
-  overflow: hidden;
+  overflow: visible;
   border: 1px solid #e4e4df;
   background: #fff;
   padding: 0.55rem;
@@ -915,12 +915,12 @@
 
 .theme-chart {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 0.7rem;
   min-height: 184px;
-  max-height: 300px;
+  max-height: none;
   min-width: 0;
-  overflow: auto;
+  overflow: visible;
 }
 
 .theme-visuals {
@@ -939,7 +939,7 @@
 }
 
 .theme-stage-card {
-  overflow: hidden;
+  overflow: visible;
   padding: 0.5rem;
   border: 1px solid #e4e4df;
   background: #fffefb;
@@ -953,22 +953,38 @@
 
 .theme-bar-row {
   display: grid;
-  grid-template-columns: minmax(128px, 0.9fr) minmax(88px, 2fr) 46px;
-  gap: 0.35rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    "label value"
+    "track track";
+  gap: 0.18rem 0.45rem;
   align-items: center;
-  margin: 0.24rem 0;
+  margin: 0.34rem 0;
   font-size: 0.76rem;
 }
 
 .theme-bar-row > span {
+  grid-area: label;
   min-width: 0;
   line-height: 1.18;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+}
+
+.theme-bar-row > em {
+  grid-area: value;
+  justify-self: end;
+  min-width: 42px;
+  color: #7d8990;
+  font-style: italic;
+  text-align: right;
+  white-space: nowrap;
 }
 
 .theme-bar-track {
+  grid-area: track;
   display: block;
   height: 9px;
+  width: 100%;
   overflow: hidden;
   border-radius: 999px;
   background: #ececec;
